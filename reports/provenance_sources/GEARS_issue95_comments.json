@@ -1,0 +1,49 @@
+[
+  {
+    "url": "https://api.github.com/repos/snap-stanford/GEARS/issues/comments/3216386250",
+    "html_url": "https://github.com/snap-stanford/GEARS/issues/95#issuecomment-3216386250",
+    "issue_url": "https://api.github.com/repos/snap-stanford/GEARS/issues/95",
+    "id": 3216386250,
+    "node_id": "IC_kwDOGZUMO86_tijK",
+    "user": {
+      "login": "yhr91",
+      "id": 12547304,
+      "node_id": "MDQ6VXNlcjEyNTQ3MzA0",
+      "avatar_url": "https://avatars.githubusercontent.com/u/12547304?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/yhr91",
+      "html_url": "https://github.com/yhr91",
+      "followers_url": "https://api.github.com/users/yhr91/followers",
+      "following_url": "https://api.github.com/users/yhr91/following{/other_user}",
+      "gists_url": "https://api.github.com/users/yhr91/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/yhr91/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/yhr91/subscriptions",
+      "organizations_url": "https://api.github.com/users/yhr91/orgs",
+      "repos_url": "https://api.github.com/users/yhr91/repos",
+      "events_url": "https://api.github.com/users/yhr91/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/yhr91/received_events",
+      "type": "User",
+      "user_view_type": "public",
+      "site_admin": false
+    },
+    "created_at": "2025-08-23T06:17:20Z",
+    "updated_at": "2025-08-23T06:17:20Z",
+    "body": "That's just a dummy variable added by the dataloader. GEARS doesn't use that attribute.",
+    "author_association": "COLLABORATOR",
+    "pin": null,
+    "reactions": {
+      "url": "https://api.github.com/repos/snap-stanford/GEARS/issues/comments/3216386250/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "performed_via_github_app": null,
+    "minimized": null
+  }
+]

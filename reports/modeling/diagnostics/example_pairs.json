@@ -1,0 +1,31 @@
+[
+  {
+    "canonical_perturbation": "CEBPA+CEBPB",
+    "index": 22,
+    "observed_rms": 0.18116952445532147,
+    "residual_over_response_rms": 0.5833347625138106,
+    "residual_rms": 0.10568248152288494,
+    "role": "largest_canonical_residual",
+    "top3_min_same_sign": 1.0
+  },
+  {
+    "canonical_perturbation": "CEBPA+ZC3HAV1",
+    "index": 26,
+    "median_observed_rms": 0.07708634242259724,
+    "observed_rms": 0.16580770953414076,
+    "residual_over_response_rms": 0.275018565827406,
+    "residual_rms": 0.04560019847920651,
+    "role": "lowest_relative_residual_above_median_observed_rms",
+    "top3_min_same_sign": 0.75
+  },
+  {
+    "canonical_perturbation": "CEBPA+CEBPE",
+    "index": 23,
+    "min_same_sign_top3": 1.0,
+    "observed_rms": 0.1909008801020992,
+    "residual_over_response_rms": 0.526332900078191,
+    "residual_rms": 0.1004774138516169,
+    "role": "largest_lane_sign_supported_residual",
+    "top3_min_same_sign": 1.0
+  }
+]

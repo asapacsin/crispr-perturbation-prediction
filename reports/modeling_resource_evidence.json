@@ -1,0 +1,19 @@
+{
+  "go_member": "norman/go.csv",
+  "columns": [
+    "source",
+    "target",
+    "importance"
+  ],
+  "rows": 673899,
+  "nodes": 3127,
+  "measured_gene_overlap": 3127,
+  "has_named_gene_sets": false,
+  "dependency_available": {
+    "matplotlib": false,
+    "sklearn": false,
+    "scipy": true,
+    "h5py": true,
+    "yaml": true
+  }
+}

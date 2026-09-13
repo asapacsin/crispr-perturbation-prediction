@@ -1,0 +1,19 @@
+{
+  "raw_X_direct_example": "CEBPA+CEBPB / LST1",
+  "effects": {
+    "CEBPA": 2.4688262360018673,
+    "CEBPB": 1.1418598699311668,
+    "CEBPA+CEBPB": 2.224714134597645
+  },
+  "interaction": -1.385971971335389,
+  "conditional_se": 0.16518386490528894,
+  "raw_X_example_matches_export": true,
+  "independently_recomputed_test_mse": {
+    "control_only": 0.007677071455332505,
+    "train_condition_balanced_perturbed_mean": 0.005455444515870546,
+    "matching_single_mean": 0.0025004242083031068,
+    "additive": 0.002372021082504696,
+    "ridge_multihot_main_effects": 0.0015997942104419099
+  },
+  "all_metric_checks_pass": true
+}

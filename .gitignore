@@ -1,0 +1,51 @@
+# Virtualenvs
+.venv/
+.venv-*/
+venv/
+env/
+ENV/
+
+# Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+*.egg-info/
+
+# Credentials
+.env
+.env.*
+
+# Data binary downloads (keep small metadata JSON / headers)
+data/norman/*.h5ad
+data/norman/*.zip
+data/norman/*.part
+data/norman/download_parts/
+data/norman/download_parts_small/
+data/norman/go.csv
+
+# Generated large cache
+reports/modeling/prepare/lane_stats.h5
+
+# Worker transcripts, prompts, handoffs
+reports/worker_*.jsonl
+reports/WORKER_*_HANDOFF.md
+reports/worker_prompts/
+
+# Execution logs
+reports/*_execution.log
+reports/*_review.log
+reports/*.log
+
+# Nested downloaded third-party GEARS repo
+reports/provenance_sources/GEARS/
+
+
+# Raw downloads and local transfer metadata
+/data/
+reports/*_log.txt

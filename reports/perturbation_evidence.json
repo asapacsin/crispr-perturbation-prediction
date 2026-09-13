@@ -1,0 +1,647 @@
+{
+  "condition_label_counts_by_n_targets": {
+    "0": 1,
+    "1": 152,
+    "2": 131
+  },
+  "cell_counts_by_n_targets": {
+    "0": 7353,
+    "1": 48407,
+    "2": 35445
+  },
+  "canonical_counts_by_n_targets": {
+    "0": 1,
+    "1": 105,
+    "2": 131
+  },
+  "n_target_genes": 105,
+  "target_genes": [
+    "AHR",
+    "ARID1A",
+    "ARRDC3",
+    "ATL1",
+    "BAK1",
+    "BCL2L11",
+    "BCORL1",
+    "BPGM",
+    "C19orf26",
+    "C3orf72",
+    "CBFA2T3",
+    "CBL",
+    "CDKN1A",
+    "CDKN1B",
+    "CDKN1C",
+    "CEBPA",
+    "CEBPB",
+    "CEBPE",
+    "CELF2",
+    "CITED1",
+    "CKS1B",
+    "CLDN6",
+    "CNN1",
+    "CNNM4",
+    "COL1A1",
+    "COL2A1",
+    "CSRNP1",
+    "DLX2",
+    "DUSP9",
+    "EGR1",
+    "ELMSAN1",
+    "ETS2",
+    "FEV",
+    "FOSB",
+    "FOXA1",
+    "FOXA3",
+    "FOXF1",
+    "FOXL2",
+    "FOXO4",
+    "GLB1L2",
+    "HES7",
+    "HK2",
+    "HNF4A",
+    "HOXA13",
+    "HOXB9",
+    "HOXC13",
+    "IER5L",
+    "IGDCC3",
+    "IKZF3",
+    "IRF1",
+    "ISL2",
+    "JUN",
+    "KIAA1804",
+    "KIF18B",
+    "KIF2C",
+    "KLF1",
+    "KMT2A",
+    "LHX1",
+    "LYL1",
+    "MAML2",
+    "MAP2K3",
+    "MAP2K6",
+    "MAP4K3",
+    "MAP4K5",
+    "MAP7D1",
+    "MAPK1",
+    "MEIS1",
+    "MIDN",
+    "NCL",
+    "NIT1",
+    "OSR2",
+    "PLK4",
+    "POU3F2",
+    "PRDM1",
+    "PRTG",
+    "PTPN1",
+    "PTPN12",
+    "PTPN13",
+    "PTPN9",
+    "RHOXF2BB",
+    "RREB1",
+    "RUNX1T1",
+    "S1PR2",
+    "SAMD1",
+    "SET",
+    "SGK1",
+    "SLC38A2",
+    "SLC4A1",
+    "SLC6A9",
+    "SNAI1",
+    "SPI1",
+    "STIL",
+    "TBX2",
+    "TBX3",
+    "TGFBR2",
+    "TMSB4X",
+    "TP73",
+    "TSC22D1",
+    "UBASH3A",
+    "UBASH3B",
+    "ZBTB1",
+    "ZBTB10",
+    "ZBTB25",
+    "ZC3HAV1",
+    "ZNF318"
+  ],
+  "targets_missing_in_var": [],
+  "control_agrees": true,
+  "condition_name_agrees": true,
+  "dose_agrees": true,
+  "barcode_suffix_counts": {
+    "1": 12409,
+    "8": 11737,
+    "7": 11667,
+    "3": 11583,
+    "2": 11422,
+    "6": 11152,
+    "4": 10629,
+    "5": 10606
+  },
+  "barcode_length_counts": {
+    "18": 91205
+  },
+  "count_summary_all": {
+    "count": 284.0,
+    "mean": 321.1443661971831,
+    "std": 445.10428793856045,
+    "min": 49.0,
+    "25%": 202.0,
+    "50%": 272.0,
+    "75%": 363.0,
+    "max": 7353.0
+  },
+  "count_summary_noncontrol": {
+    "count": 283.0,
+    "mean": 296.29681978798584,
+    "std": 151.1847663338164,
+    "min": 49.0,
+    "25%": 202.0,
+    "50%": 272.0,
+    "75%": 361.5,
+    "max": 1030.0
+  },
+  "canonical_count_summary_noncontrol": {
+    "count": 236.0,
+    "mean": 355.3050847457627,
+    "std": 223.50288716206782,
+    "min": 49.0,
+    "25%": 212.0,
+    "50%": 294.0,
+    "75%": 456.5,
+    "max": 1641.0
+  },
+  "merged_canonical_groups": [
+    {
+      "canonical_perturbation": "BAK1",
+      "n_targets": 1,
+      "n_cells": 1171,
+      "n_original_labels": 2,
+      "original_labels": "BAK1+ctrl;ctrl+BAK1"
+    },
+    {
+      "canonical_perturbation": "C19orf26",
+      "n_targets": 1,
+      "n_cells": 750,
+      "n_original_labels": 2,
+      "original_labels": "C19orf26+ctrl;ctrl+C19orf26"
+    },
+    {
+      "canonical_perturbation": "CBFA2T3",
+      "n_targets": 1,
+      "n_cells": 531,
+      "n_original_labels": 2,
+      "original_labels": "CBFA2T3+ctrl;ctrl+CBFA2T3"
+    },
+    {
+      "canonical_perturbation": "CDKN1A",
+      "n_targets": 1,
+      "n_cells": 275,
+      "n_original_labels": 2,
+      "original_labels": "CDKN1A+ctrl;ctrl+CDKN1A"
+    },
+    {
+      "canonical_perturbation": "CDKN1B",
+      "n_targets": 1,
+      "n_cells": 413,
+      "n_original_labels": 2,
+      "original_labels": "CDKN1B+ctrl;ctrl+CDKN1B"
+    },
+    {
+      "canonical_perturbation": "CEBPA",
+      "n_targets": 1,
+      "n_cells": 580,
+      "n_original_labels": 2,
+      "original_labels": "CEBPA+ctrl;ctrl+CEBPA"
+    },
+    {
+      "canonical_perturbation": "CEBPB",
+      "n_targets": 1,
+      "n_cells": 422,
+      "n_original_labels": 2,
+      "original_labels": "CEBPB+ctrl;ctrl+CEBPB"
+    },
+    {
+      "canonical_perturbation": "CEBPE",
+      "n_targets": 1,
+      "n_cells": 1039,
+      "n_original_labels": 2,
+      "original_labels": "CEBPE+ctrl;ctrl+CEBPE"
+    },
+    {
+      "canonical_perturbation": "CLDN6",
+      "n_targets": 1,
+      "n_cells": 544,
+      "n_original_labels": 2,
+      "original_labels": "CLDN6+ctrl;ctrl+CLDN6"
+    },
+    {
+      "canonical_perturbation": "CNN1",
+      "n_targets": 1,
+      "n_cells": 636,
+      "n_original_labels": 2,
+      "original_labels": "CNN1+ctrl;ctrl+CNN1"
+    },
+    {
+      "canonical_perturbation": "COL2A1",
+      "n_targets": 1,
+      "n_cells": 474,
+      "n_original_labels": 2,
+      "original_labels": "COL2A1+ctrl;ctrl+COL2A1"
+    },
+    {
+      "canonical_perturbation": "DLX2",
+      "n_targets": 1,
+      "n_cells": 606,
+      "n_original_labels": 2,
+      "original_labels": "DLX2+ctrl;ctrl+DLX2"
+    },
+    {
+      "canonical_perturbation": "ELMSAN1",
+      "n_targets": 1,
+      "n_cells": 783,
+      "n_original_labels": 2,
+      "original_labels": "ELMSAN1+ctrl;ctrl+ELMSAN1"
+    },
+    {
+      "canonical_perturbation": "ETS2",
+      "n_targets": 1,
+      "n_cells": 1031,
+      "n_original_labels": 2,
+      "original_labels": "ETS2+ctrl;ctrl+ETS2"
+    },
+    {
+      "canonical_perturbation": "FEV",
+      "n_targets": 1,
+      "n_cells": 647,
+      "n_original_labels": 2,
+      "original_labels": "FEV+ctrl;ctrl+FEV"
+    },
+    {
+      "canonical_perturbation": "FOXA1",
+      "n_targets": 1,
+      "n_cells": 761,
+      "n_original_labels": 2,
+      "original_labels": "FOXA1+ctrl;ctrl+FOXA1"
+    },
+    {
+      "canonical_perturbation": "FOXF1",
+      "n_targets": 1,
+      "n_cells": 715,
+      "n_original_labels": 2,
+      "original_labels": "FOXF1+ctrl;ctrl+FOXF1"
+    },
+    {
+      "canonical_perturbation": "FOXL2",
+      "n_targets": 1,
+      "n_cells": 544,
+      "n_original_labels": 2,
+      "original_labels": "FOXL2+ctrl;ctrl+FOXL2"
+    },
+    {
+      "canonical_perturbation": "HOXB9",
+      "n_targets": 1,
+      "n_cells": 612,
+      "n_original_labels": 2,
+      "original_labels": "HOXB9+ctrl;ctrl+HOXB9"
+    },
+    {
+      "canonical_perturbation": "HOXC13",
+      "n_targets": 1,
+      "n_cells": 343,
+      "n_original_labels": 2,
+      "original_labels": "HOXC13+ctrl;ctrl+HOXC13"
+    },
+    {
+      "canonical_perturbation": "IER5L",
+      "n_targets": 1,
+      "n_cells": 327,
+      "n_original_labels": 2,
+      "original_labels": "IER5L+ctrl;ctrl+IER5L"
+    },
+    {
+      "canonical_perturbation": "IGDCC3",
+      "n_targets": 1,
+      "n_cells": 507,
+      "n_original_labels": 2,
+      "original_labels": "IGDCC3+ctrl;ctrl+IGDCC3"
+    },
+    {
+      "canonical_perturbation": "IKZF3",
+      "n_targets": 1,
+      "n_cells": 583,
+      "n_original_labels": 2,
+      "original_labels": "IKZF3+ctrl;ctrl+IKZF3"
+    },
+    {
+      "canonical_perturbation": "ISL2",
+      "n_targets": 1,
+      "n_cells": 485,
+      "n_original_labels": 2,
+      "original_labels": "ISL2+ctrl;ctrl+ISL2"
+    },
+    {
+      "canonical_perturbation": "KIF2C",
+      "n_targets": 1,
+      "n_cells": 518,
+      "n_original_labels": 2,
+      "original_labels": "KIF2C+ctrl;ctrl+KIF2C"
+    },
+    {
+      "canonical_perturbation": "KLF1",
+      "n_targets": 1,
+      "n_cells": 1641,
+      "n_original_labels": 2,
+      "original_labels": "KLF1+ctrl;ctrl+KLF1"
+    },
+    {
+      "canonical_perturbation": "MAP2K6",
+      "n_targets": 1,
+      "n_cells": 741,
+      "n_original_labels": 2,
+      "original_labels": "MAP2K6+ctrl;ctrl+MAP2K6"
+    },
+    {
+      "canonical_perturbation": "MAP7D1",
+      "n_targets": 1,
+      "n_cells": 635,
+      "n_original_labels": 2,
+      "original_labels": "MAP7D1+ctrl;ctrl+MAP7D1"
+    },
+    {
+      "canonical_perturbation": "MAPK1",
+      "n_targets": 1,
+      "n_cells": 660,
+      "n_original_labels": 2,
+      "original_labels": "MAPK1+ctrl;ctrl+MAPK1"
+    },
+    {
+      "canonical_perturbation": "MEIS1",
+      "n_targets": 1,
+      "n_cells": 682,
+      "n_original_labels": 2,
+      "original_labels": "MEIS1+ctrl;ctrl+MEIS1"
+    },
+    {
+      "canonical_perturbation": "OSR2",
+      "n_targets": 1,
+      "n_cells": 858,
+      "n_original_labels": 2,
+      "original_labels": "OSR2+ctrl;ctrl+OSR2"
+    },
+    {
+      "canonical_perturbation": "PRTG",
+      "n_targets": 1,
+      "n_cells": 581,
+      "n_original_labels": 2,
+      "original_labels": "PRTG+ctrl;ctrl+PRTG"
+    },
+    {
+      "canonical_perturbation": "PTPN12",
+      "n_targets": 1,
+      "n_cells": 358,
+      "n_original_labels": 2,
+      "original_labels": "PTPN12+ctrl;ctrl+PTPN12"
+    },
+    {
+      "canonical_perturbation": "PTPN9",
+      "n_targets": 1,
+      "n_cells": 363,
+      "n_original_labels": 2,
+      "original_labels": "PTPN9+ctrl;ctrl+PTPN9"
+    },
+    {
+      "canonical_perturbation": "RUNX1T1",
+      "n_targets": 1,
+      "n_cells": 631,
+      "n_original_labels": 2,
+      "original_labels": "RUNX1T1+ctrl;ctrl+RUNX1T1"
+    },
+    {
+      "canonical_perturbation": "SAMD1",
+      "n_targets": 1,
+      "n_cells": 430,
+      "n_original_labels": 2,
+      "original_labels": "SAMD1+ctrl;ctrl+SAMD1"
+    },
+    {
+      "canonical_perturbation": "SET",
+      "n_targets": 1,
+      "n_cells": 790,
+      "n_original_labels": 2,
+      "original_labels": "SET+ctrl;ctrl+SET"
+    },
+    {
+      "canonical_perturbation": "SNAI1",
+      "n_targets": 1,
+      "n_cells": 380,
+      "n_original_labels": 2,
+      "original_labels": "SNAI1+ctrl;ctrl+SNAI1"
+    },
+    {
+      "canonical_perturbation": "SPI1",
+      "n_targets": 1,
+      "n_cells": 506,
+      "n_original_labels": 2,
+      "original_labels": "SPI1+ctrl;ctrl+SPI1"
+    },
+    {
+      "canonical_perturbation": "STIL",
+      "n_targets": 1,
+      "n_cells": 268,
+      "n_original_labels": 2,
+      "original_labels": "STIL+ctrl;ctrl+STIL"
+    },
+    {
+      "canonical_perturbation": "TBX2",
+      "n_targets": 1,
+      "n_cells": 564,
+      "n_original_labels": 2,
+      "original_labels": "TBX2+ctrl;ctrl+TBX2"
+    },
+    {
+      "canonical_perturbation": "TBX3",
+      "n_targets": 1,
+      "n_cells": 559,
+      "n_original_labels": 2,
+      "original_labels": "TBX3+ctrl;ctrl+TBX3"
+    },
+    {
+      "canonical_perturbation": "TGFBR2",
+      "n_targets": 1,
+      "n_cells": 537,
+      "n_original_labels": 2,
+      "original_labels": "TGFBR2+ctrl;ctrl+TGFBR2"
+    },
+    {
+      "canonical_perturbation": "UBASH3A",
+      "n_targets": 1,
+      "n_cells": 686,
+      "n_original_labels": 2,
+      "original_labels": "UBASH3A+ctrl;ctrl+UBASH3A"
+    },
+    {
+      "canonical_perturbation": "UBASH3B",
+      "n_targets": 1,
+      "n_cells": 983,
+      "n_original_labels": 2,
+      "original_labels": "UBASH3B+ctrl;ctrl+UBASH3B"
+    },
+    {
+      "canonical_perturbation": "ZBTB1",
+      "n_targets": 1,
+      "n_cells": 602,
+      "n_original_labels": 2,
+      "original_labels": "ZBTB1+ctrl;ctrl+ZBTB1"
+    },
+    {
+      "canonical_perturbation": "ZBTB25",
+      "n_targets": 1,
+      "n_cells": 590,
+      "n_original_labels": 2,
+      "original_labels": "ZBTB25+ctrl;ctrl+ZBTB25"
+    }
+  ],
+  "lowest_counts": [
+    {
+      "condition": "C3orf72+FOXL2",
+      "n_cells": 49,
+      "target_genes": "C3orf72+FOXL2",
+      "n_targets": 2,
+      "canonical_perturbation": "C3orf72+FOXL2"
+    },
+    {
+      "condition": "CBL+UBASH3A",
+      "n_cells": 50,
+      "target_genes": "CBL+UBASH3A",
+      "n_targets": 2,
+      "canonical_perturbation": "CBL+UBASH3A"
+    },
+    {
+      "condition": "JUN+CEBPB",
+      "n_cells": 52,
+      "target_genes": "CEBPB+JUN",
+      "n_targets": 2,
+      "canonical_perturbation": "CEBPB+JUN"
+    },
+    {
+      "condition": "SAMD1+TGFBR2",
+      "n_cells": 59,
+      "target_genes": "SAMD1+TGFBR2",
+      "n_targets": 2,
+      "canonical_perturbation": "SAMD1+TGFBR2"
+    },
+    {
+      "condition": "PLK4+STIL",
+      "n_cells": 66,
+      "target_genes": "PLK4+STIL",
+      "n_targets": 2,
+      "canonical_perturbation": "PLK4+STIL"
+    },
+    {
+      "condition": "JUN+CEBPA",
+      "n_cells": 70,
+      "target_genes": "CEBPA+JUN",
+      "n_targets": 2,
+      "canonical_perturbation": "CEBPA+JUN"
+    },
+    {
+      "condition": "ZBTB10+DLX2",
+      "n_cells": 74,
+      "target_genes": "DLX2+ZBTB10",
+      "n_targets": 2,
+      "canonical_perturbation": "DLX2+ZBTB10"
+    },
+    {
+      "condition": "CEBPB+CEBPA",
+      "n_cells": 75,
+      "target_genes": "CEBPA+CEBPB",
+      "n_targets": 2,
+      "canonical_perturbation": "CEBPA+CEBPB"
+    },
+    {
+      "condition": "CDKN1C+CDKN1B",
+      "n_cells": 79,
+      "target_genes": "CDKN1B+CDKN1C",
+      "n_targets": 2,
+      "canonical_perturbation": "CDKN1B+CDKN1C"
+    },
+    {
+      "condition": "CDKN1C+CDKN1A",
+      "n_cells": 80,
+      "target_genes": "CDKN1A+CDKN1C",
+      "n_targets": 2,
+      "canonical_perturbation": "CDKN1A+CDKN1C"
+    }
+  ],
+  "highest_counts": [
+    {
+      "condition": "ctrl",
+      "n_cells": 7353,
+      "target_genes": "",
+      "n_targets": 0,
+      "canonical_perturbation": "ctrl"
+    },
+    {
+      "condition": "CEBPE+RUNX1T1",
+      "n_cells": 1030,
+      "target_genes": "CEBPE+RUNX1T1",
+      "n_targets": 2,
+      "canonical_perturbation": "CEBPE+RUNX1T1"
+    },
+    {
+      "condition": "KLF1+ctrl",
+      "n_cells": 997,
+      "target_genes": "KLF1",
+      "n_targets": 1,
+      "canonical_perturbation": "KLF1"
+    },
+    {
+      "condition": "TBX3+TBX2",
+      "n_cells": 969,
+      "target_genes": "TBX2+TBX3",
+      "n_targets": 2,
+      "canonical_perturbation": "TBX2+TBX3"
+    },
+    {
+      "condition": "SLC4A1+ctrl",
+      "n_cells": 853,
+      "target_genes": "SLC4A1",
+      "n_targets": 1,
+      "canonical_perturbation": "SLC4A1"
+    },
+    {
+      "condition": "ETS2+CNN1",
+      "n_cells": 785,
+      "target_genes": "CNN1+ETS2",
+      "n_targets": 2,
+      "canonical_perturbation": "CNN1+ETS2"
+    },
+    {
+      "condition": "DUSP9+ETS2",
+      "n_cells": 698,
+      "target_genes": "DUSP9+ETS2",
+      "n_targets": 2,
+      "canonical_perturbation": "DUSP9+ETS2"
+    },
+    {
+      "condition": "UBASH3B+OSR2",
+      "n_cells": 677,
+      "target_genes": "OSR2+UBASH3B",
+      "n_targets": 2,
+      "canonical_perturbation": "OSR2+UBASH3B"
+    },
+    {
+      "condition": "DUSP9+ctrl",
+      "n_cells": 662,
+      "target_genes": "DUSP9",
+      "n_targets": 1,
+      "canonical_perturbation": "DUSP9"
+    },
+    {
+      "condition": "ctrl+ETS2",
+      "n_cells": 656,
+      "target_genes": "ETS2",
+      "n_targets": 1,
+      "canonical_perturbation": "ETS2"
+    }
+  ]
+}

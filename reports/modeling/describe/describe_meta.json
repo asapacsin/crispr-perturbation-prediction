@@ -1,0 +1,11 @@
+{
+  "chosen_alpha_frozen": 0.1,
+  "go_enrichment": "skipped",
+  "largest_residual_pair_full_data": "CEBPA+CEBPB",
+  "n_dual_orientation_singles": 47,
+  "n_genes": 5045,
+  "n_pair_tables": 131,
+  "n_single_tables": 105,
+  "significance": "not_estimable_independent_bioreplicates_absent",
+  "used_in_fit": false
+}

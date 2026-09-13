@@ -1,0 +1,583 @@
+# Factual validated identity for the local Norman processed H5AD.
+# Proposal-only task/split/evaluation sections are NOT approved.
+# This file does not authorize model training.
+
+schema_version: 1
+final_protocol_approved: false
+training_allowed: false
+original_annotations_immutable: true
+
+identity:
+  dataset_name: norman2019_gears_processed
+  local_h5ad: data/norman/perturb_processed.h5ad
+  sha256: 23ffb0fac6a847ff927cf7509d80d85052bfefbfb97610786a2dafaaefa0b6a0
+  n_obs: 91205
+  n_vars: 5045
+  shape: [91205, 5045]
+  hdf5_root_keys: [X, layers, obs, uns, var]
+  stored_layers: [counts]
+  X_is_not_a_stored_layer: true
+  no_raw: true
+  bytes: 2228610012
+  download:
+    dataverse_file_url: https://dataverse.harvard.edu/api/access/datafile/6154020
+    dataverse_dataset_doi: https://doi.org/10.7910/DVN/Q2ZV3E
+    archive_member: norman/perturb_processed.h5ad
+    local_archive: data/norman/norman.zip
+
+X:
+  role: main_csr_log1p_per_cell_scaled_expression_matrix
+  not_a_stored_layer: true
+  dtype: float32
+  storage: csr_sparse
+  transform_identity: "X = log1p(counts * per_cell_scale)"
+  max_abs_error_vs_counts: 6.134923680178872e-7
+  numeric_normalization_target: unknown
+  do_not_treat_as_raw_counts: true
+
+stored_layer_counts:
+  role: integer_valued_count_layer
+  dtype: float32
+  load_in_schema_validation: false
+  interpret_as_umi_only_with_source_join: true
+  reconstruction_from_geo_raw_matrix: not_done
+
+var:
+  index_name: gene_id
+  columns: [gene_name]
+  feature_order_authority: gene_id
+  original_var_immutable: true
+  n_features: 5045
+
+obs:
+  index_name: cell_barcode
+  columns: [condition, cell_type, dose_val, control, condition_name]
+  preserve_barcode_suffix: true
+  stored_cell_type_value: A549
+  stored_cell_type_is_dummy: true
+  original_obs_immutable: true
+
+control:
+  condition_value: ctrl
+  control_column: control
+  control_value: 1
+  n_cells: 7353
+  dose_val: "1"
+  source_constructs:
+    - NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0
+    - NegCtrl11_NegCtrl0__NegCtrl11_NegCtrl0
+    - NegCtrl0_NegCtrl0__NegCtrl0_NegCtrl0
+  excluded_source_control: NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0
+
+canonicalization:
+  delimiter: "+"
+  control_token: ctrl
+  orientation_equivalent_for_target_set: true
+  experimental_orientation_equivalence: unknown
+  sort_unique_noncontrol_tokens: true
+  max_targets: 2
+  never_count_construct_identifier_halves_as_four_perturbations: true
+  source_guide_parser: "split('__')[1].split('_')[:2]; NegCtrl* -> ctrl"
+  documented_source_to_stored_aliases:
+    RHOXF2: RHOXF2BB
+  alias_status: dataset_local_reconciliation_not_gene_symbol_equivalence
+
+perturbation_counts:
+  original_condition_labels: 284
+  source_guide_identity_labels: 289
+  target_sets_including_control: 237
+  single_labels: 152
+  single_target_sets: 105
+  double_labels: 131
+  double_target_sets: 131
+  control_cells: 7353
+  single_cells: 48407
+  double_cells: 35445
+
+targets:
+  n: 105
+  names:
+    - AHR
+    - ARID1A
+    - ARRDC3
+    - ATL1
+    - BAK1
+    - BCL2L11
+    - BCORL1
+    - BPGM
+    - C19orf26
+    - C3orf72
+    - CBFA2T3
+    - CBL
+    - CDKN1A
+    - CDKN1B
+    - CDKN1C
+    - CEBPA
+    - CEBPB
+    - CEBPE
+    - CELF2
+    - CITED1
+    - CKS1B
+    - CLDN6
+    - CNN1
+    - CNNM4
+    - COL1A1
+    - COL2A1
+    - CSRNP1
+    - DLX2
+    - DUSP9
+    - EGR1
+    - ELMSAN1
+    - ETS2
+    - FEV
+    - FOSB
+    - FOXA1
+    - FOXA3
+    - FOXF1
+    - FOXL2
+    - FOXO4
+    - GLB1L2
+    - HES7
+    - HK2
+    - HNF4A
+    - HOXA13
+    - HOXB9
+    - HOXC13
+    - IER5L
+    - IGDCC3
+    - IKZF3
+    - IRF1
+    - ISL2
+    - JUN
+    - KIAA1804
+    - KIF18B
+    - KIF2C
+    - KLF1
+    - KMT2A
+    - LHX1
+    - LYL1
+    - MAML2
+    - MAP2K3
+    - MAP2K6
+    - MAP4K3
+    - MAP4K5
+    - MAP7D1
+    - MAPK1
+    - MEIS1
+    - MIDN
+    - NCL
+    - NIT1
+    - OSR2
+    - PLK4
+    - POU3F2
+    - PRDM1
+    - PRTG
+    - PTPN1
+    - PTPN12
+    - PTPN13
+    - PTPN9
+    - RHOXF2BB
+    - RREB1
+    - RUNX1T1
+    - S1PR2
+    - SAMD1
+    - SET
+    - SGK1
+    - SLC38A2
+    - SLC4A1
+    - SLC6A9
+    - SNAI1
+    - SPI1
+    - STIL
+    - TBX2
+    - TBX3
+    - TGFBR2
+    - TMSB4X
+    - TP73
+    - TSC22D1
+    - UBASH3A
+    - UBASH3B
+    - ZBTB1
+    - ZBTB10
+    - ZBTB25
+    - ZC3HAV1
+    - ZNF318
+  gene_ids:
+    - {name: AHR, gene_id: ENSG00000106546}
+    - {name: ARID1A, gene_id: ENSG00000117713}
+    - {name: ARRDC3, gene_id: ENSG00000113369}
+    - {name: ATL1, gene_id: ENSG00000198513}
+    - {name: BAK1, gene_id: ENSG00000030110}
+    - {name: BCL2L11, gene_id: ENSG00000153094}
+    - {name: BCORL1, gene_id: ENSG00000085185}
+    - {name: BPGM, gene_id: ENSG00000172331}
+    - {name: C19orf26, gene_id: ENSG00000099625}
+    - {name: C3orf72, gene_id: ENSG00000206262}
+    - {name: CBFA2T3, gene_id: ENSG00000129993}
+    - {name: CBL, gene_id: ENSG00000110395}
+    - {name: CDKN1A, gene_id: ENSG00000124762}
+    - {name: CDKN1B, gene_id: ENSG00000111276}
+    - {name: CDKN1C, gene_id: ENSG00000129757}
+    - {name: CEBPA, gene_id: ENSG00000245848}
+    - {name: CEBPB, gene_id: ENSG00000172216}
+    - {name: CEBPE, gene_id: ENSG00000092067}
+    - {name: CELF2, gene_id: ENSG00000048740}
+    - {name: CITED1, gene_id: ENSG00000125931}
+    - {name: CKS1B, gene_id: ENSG00000173207}
+    - {name: CLDN6, gene_id: ENSG00000184697}
+    - {name: CNN1, gene_id: ENSG00000130176}
+    - {name: CNNM4, gene_id: ENSG00000158158}
+    - {name: COL1A1, gene_id: ENSG00000108821}
+    - {name: COL2A1, gene_id: ENSG00000139219}
+    - {name: CSRNP1, gene_id: ENSG00000144655}
+    - {name: DLX2, gene_id: ENSG00000115844}
+    - {name: DUSP9, gene_id: ENSG00000130829}
+    - {name: EGR1, gene_id: ENSG00000120738}
+    - {name: ELMSAN1, gene_id: ENSG00000156030}
+    - {name: ETS2, gene_id: ENSG00000157557}
+    - {name: FEV, gene_id: ENSG00000163497}
+    - {name: FOSB, gene_id: ENSG00000125740}
+    - {name: FOXA1, gene_id: ENSG00000129514}
+    - {name: FOXA3, gene_id: ENSG00000170608}
+    - {name: FOXF1, gene_id: ENSG00000103241}
+    - {name: FOXL2, gene_id: ENSG00000183770}
+    - {name: FOXO4, gene_id: ENSG00000184481}
+    - {name: GLB1L2, gene_id: ENSG00000149328}
+    - {name: HES7, gene_id: ENSG00000179111}
+    - {name: HK2, gene_id: ENSG00000159399}
+    - {name: HNF4A, gene_id: ENSG00000101076}
+    - {name: HOXA13, gene_id: ENSG00000106031}
+    - {name: HOXB9, gene_id: ENSG00000170689}
+    - {name: HOXC13, gene_id: ENSG00000123364}
+    - {name: IER5L, gene_id: ENSG00000188483}
+    - {name: IGDCC3, gene_id: ENSG00000174498}
+    - {name: IKZF3, gene_id: ENSG00000161405}
+    - {name: IRF1, gene_id: ENSG00000125347}
+    - {name: ISL2, gene_id: ENSG00000159556}
+    - {name: JUN, gene_id: ENSG00000177606}
+    - {name: KIAA1804, gene_id: ENSG00000143674}
+    - {name: KIF18B, gene_id: ENSG00000186185}
+    - {name: KIF2C, gene_id: ENSG00000142945}
+    - {name: KLF1, gene_id: ENSG00000105610}
+    - {name: KMT2A, gene_id: ENSG00000118058}
+    - {name: LHX1, gene_id: ENSG00000273706}
+    - {name: LYL1, gene_id: ENSG00000104903}
+    - {name: MAML2, gene_id: ENSG00000184384}
+    - {name: MAP2K3, gene_id: ENSG00000034152}
+    - {name: MAP2K6, gene_id: ENSG00000108984}
+    - {name: MAP4K3, gene_id: ENSG00000011566}
+    - {name: MAP4K5, gene_id: ENSG00000012983}
+    - {name: MAP7D1, gene_id: ENSG00000116871}
+    - {name: MAPK1, gene_id: ENSG00000100030}
+    - {name: MEIS1, gene_id: ENSG00000143995}
+    - {name: MIDN, gene_id: ENSG00000167470}
+    - {name: NCL, gene_id: ENSG00000115053}
+    - {name: NIT1, gene_id: ENSG00000158793}
+    - {name: OSR2, gene_id: ENSG00000164920}
+    - {name: PLK4, gene_id: ENSG00000142731}
+    - {name: POU3F2, gene_id: ENSG00000184486}
+    - {name: PRDM1, gene_id: ENSG00000057657}
+    - {name: PRTG, gene_id: ENSG00000166450}
+    - {name: PTPN1, gene_id: ENSG00000196396}
+    - {name: PTPN12, gene_id: ENSG00000127947}
+    - {name: PTPN13, gene_id: ENSG00000163629}
+    - {name: PTPN9, gene_id: ENSG00000169410}
+    - {name: RHOXF2BB, gene_id: ENSG00000203989}
+    - {name: RREB1, gene_id: ENSG00000124782}
+    - {name: RUNX1T1, gene_id: ENSG00000079102}
+    - {name: S1PR2, gene_id: ENSG00000267534}
+    - {name: SAMD1, gene_id: ENSG00000141858}
+    - {name: SET, gene_id: ENSG00000119335}
+    - {name: SGK1, gene_id: ENSG00000118515}
+    - {name: SLC38A2, gene_id: ENSG00000134294}
+    - {name: SLC4A1, gene_id: ENSG00000004939}
+    - {name: SLC6A9, gene_id: ENSG00000196517}
+    - {name: SNAI1, gene_id: ENSG00000124216}
+    - {name: SPI1, gene_id: ENSG00000066336}
+    - {name: STIL, gene_id: ENSG00000123473}
+    - {name: TBX2, gene_id: ENSG00000121068}
+    - {name: TBX3, gene_id: ENSG00000135111}
+    - {name: TGFBR2, gene_id: ENSG00000163513}
+    - {name: TMSB4X, gene_id: ENSG00000205542}
+    - {name: TP73, gene_id: ENSG00000078900}
+    - {name: TSC22D1, gene_id: ENSG00000102804}
+    - {name: UBASH3A, gene_id: ENSG00000160185}
+    - {name: UBASH3B, gene_id: ENSG00000154127}
+    - {name: ZBTB1, gene_id: ENSG00000126804}
+    - {name: ZBTB10, gene_id: ENSG00000205189}
+    - {name: ZBTB25, gene_id: ENSG00000089775}
+    - {name: ZC3HAV1, gene_id: ENSG00000105939}
+    - {name: ZNF318, gene_id: ENSG00000171467}
+
+groups:
+  n: 8
+  barcode_suffix_matches_source_gemgroup: true
+  interpretation: technical_10x_chromium_lanes_not_biological_replicates_or_donors
+  lanes:
+    - {barcode_group: 1, expression_sample: GSM3906020, guide_sample: GSM3906028, cells: 12409, controls: 1008}
+    - {barcode_group: 2, expression_sample: GSM3906021, guide_sample: GSM3906029, cells: 11422, controls: 928}
+    - {barcode_group: 3, expression_sample: GSM3906022, guide_sample: GSM3906030, cells: 11583, controls: 863}
+    - {barcode_group: 4, expression_sample: GSM3906023, guide_sample: GSM3906031, cells: 10629, controls: 874}
+    - {barcode_group: 5, expression_sample: GSM3906024, guide_sample: GSM3906032, cells: 10606, controls: 821}
+    - {barcode_group: 6, expression_sample: GSM3906025, guide_sample: GSM3906033, cells: 11152, controls: 976}
+    - {barcode_group: 7, expression_sample: GSM3906026, guide_sample: GSM3906034, cells: 11667, controls: 934}
+    - {barcode_group: 8, expression_sample: GSM3906027, guide_sample: GSM3906035, cells: 11737, controls: 949}
+
+source_provenance:
+  paper:
+    title: Exploring genetic interaction manifolds constructed from rich single-cell phenotypes
+    doi: 10.1126/science.aax4438
+    pmid: 31395745
+    pmc: PMC6746554
+    url: https://doi.org/10.1126/science.aax4438
+    pubmed_url: https://pubmed.ncbi.nlm.nih.gov/31395745/
+    pmc_url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6746554/
+    cell_line: K562
+    mechanism: SunTag_CRISPRa_overexpression
+    cell_line_confidence: high
+  geo:
+    series: GSE133344
+    series_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE133344
+    raw_cell_identities_url: https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE133344&format=file&file=GSE133344%5Fraw%5Fcell%5Fidentities.csv.gz
+    filtered_cell_identities_url: https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE133344&format=file&file=GSE133344%5Ffiltered%5Fcell%5Fidentities.csv.gz
+    preferred_identity_table: raw
+    sample_example: GSM3906020
+    sample_url: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM3906020
+    sample_metadata_mentions_dCas9_KRAB: true
+    do_not_infer_mechanism_from_KRAB_sentence: true
+    krab_conflict_status: strong_inference_of_metadata_error_not_author_confirmed
+    krab_sentence_is_author_confirmed_correction: false
+  preprocessing_notebook:
+    repo: https://github.com/yhr91/GEARS_misc
+    commit: f88211870dfa89c38a2eedbd69ca1abd28a25f3c
+    path: data/preprocessing/Norman19.ipynb
+    url: https://github.com/yhr91/GEARS_misc/blob/f88211870dfa89c38a2eedbd69ca1abd28a25f3c/data/preprocessing/Norman19.ipynb
+    cell_36_sets_cell_type_A549: true
+  gears_issue95:
+    url: https://github.com/snap-stanford/GEARS/issues/95
+    maintainer_comment_url: https://github.com/snap-stanford/GEARS/issues/95#issuecomment-3216386250
+  author_relabel_notebook:
+    repo: https://github.com/thomasmaxwellnorman/Perturbseq_GI
+    path: GI_generate_populations.ipynb
+    url: https://github.com/thomasmaxwellnorman/Perturbseq_GI/blob/3b25109aeb9c0c2026bd70abd50304a0ad4e5395/GI_generate_populations.ipynb
+  guide_sequence_sources:
+    data_sharing: https://github.com/thomasmaxwellnorman/Perturbseq_GI/blob/3b25109aeb9c0c2026bd70abd50304a0ad4e5395/data_sharing/20180821_guides_chosen_for_perturbseq.csv
+    final_emaps: https://github.com/thomasmaxwellnorman/Perturbseq_GI/blob/3b25109aeb9c0c2026bd70abd50304a0ad4e5395/final_emaps/20180821_guides_chosen_for_perturbseq.csv
+    local_data_sharing: reports/provenance_sources/guide_sequences_data_sharing.csv
+    local_final_emaps: reports/provenance_sources/guide_sequences_final_emaps.csv
+    preliminary_incomplete_table: reports/target_guide_sequences.csv
+  verified_cell_metadata: reports/verified_cell_metadata.csv
+  verified_guide_sequences: reports/verified_target_guide_sequences.csv
+  unresolved_guide_targets: [SLC38A2]
+  bulk_fitness_is_model_input: false
+  use_filtered_geo_identities: false
+
+pairing:
+  pairing_ids_present: false
+  pairing_design_present: false
+  exact_duplicate_X_rows: 0
+  zero_duplicate_X_rows_do_not_establish_no_pairing: true
+  no_pairing_established_by: absence_of_pairing_ids_and_design
+
+hvg:
+  selected_on_full_processed_cohort: true
+  n_top_genes: 5000
+  retained_features: 5045
+  categorically_invalid_as_training_input: false
+  retrospective_prepared_feature_benchmark_allowed: true
+  caveat: full-cohort HVG selection is not a prospective gene-discovery claim
+
+uns_leakage:
+  keys:
+    - non_dropout_gene_idx
+    - non_zeros_gene_idx
+    - rank_genes_groups_cov_all
+    - top_non_dropout_de_20
+    - top_non_zero_de_20
+  computed_on_full_data: true
+  allowed_as_training_input: false
+  prohibited_for_fitting: true
+
+proposal_only:
+  status: not_approved
+  user_reserves:
+    - final_task
+    - final_split
+    - final_metric
+    - final_model
+    - final_visualization
+  primary_protocol: B_heldout_combination
+  primary_protocol_approved: false
+  split_seed: 20260911
+  split_manifest: reports/proposed_split_assignments.csv
+  split_evidence: reports/provenance_evidence.json
+  evaluation:
+    proposed_target_name: condition_mean_log_expression_profile_delta_vs_training_controls
+    approved: false
+    not_target_gene_only: true
+    n_measured_genes: 5045
+    formula: >
+      For each canonical condition C, the target is the 5045-gene mean log-expression
+      profile delta versus training-split controls:
+      delta(C) = mean(X[cells in C, :]) - mean(X[training-split control cells, :]),
+      where X is the stored log1p per-cell-scaled matrix.
+    uses_training_controls_only: true
+    paired_cell_counterfactual: false
+    exact_duplicate_X_rows: 0
+    zero_duplicate_X_rows_do_not_establish_no_pairing: true
+    do_not_synthesize_paired_cells: true
+    feature_order: gene_id
+    primary_metrics: [macro_condition_mse, macro_condition_mae]
+    secondary_metrics: [delta_pearson]
+    baseline_skills: [common_shift, additive]
+  protocols:
+    A_random_cell:
+      column: A_random_cell
+      approved: false
+      feasibility: feasible_interpolation_only
+      sizes:
+        train: {cells: 73219, controls: 5883, noncontrol_cells: 67336}
+        validation: {cells: 8993, controls: 735, noncontrol_cells: 8258}
+        test: {cells: 8993, controls: 735, noncontrol_cells: 8258}
+    B_heldout_combination:
+      column: B_heldout_combination
+      approved: false
+      feasibility: feasible_proposed_primary
+      sizes:
+        train: {cells: 75588, controls: 5891, noncontrol_cells: 69697, noncontrol_target_sets: 184, single_target_sets: 105, double_target_sets: 79}
+        validation: {cells: 7639, controls: 731, noncontrol_cells: 6908, noncontrol_target_sets: 26, single_target_sets: 0, double_target_sets: 26}
+        test: {cells: 7978, controls: 731, noncontrol_cells: 7247, noncontrol_target_sets: 26, single_target_sets: 0, double_target_sets: 26}
+    C_heldout_target_gene:
+      column: C_heldout_target_gene
+      approved: false
+      feasibility: feasible_with_bridge_exclusions
+      sizes:
+        train: {cells: 59007, controls: 5891, noncontrol_cells: 53116}
+        validation: {cells: 12676, controls: 731, noncontrol_cells: 11945}
+        test: {cells: 18476, controls: 731, noncontrol_cells: 17745}
+        excluded_val_test_bridge: {cells: 1046, controls: 0, noncontrol_cells: 1046}
+      train_genes:
+        - AHR
+        - ARID1A
+        - ARRDC3
+        - BCORL1
+        - C19orf26
+        - C3orf72
+        - CBFA2T3
+        - CBL
+        - CDKN1A
+        - CDKN1C
+        - CEBPA
+        - CEBPB
+        - CEBPE
+        - CELF2
+        - CITED1
+        - CKS1B
+        - CLDN6
+        - CNN1
+        - CNNM4
+        - COL1A1
+        - CSRNP1
+        - DLX2
+        - DUSP9
+        - EGR1
+        - ELMSAN1
+        - ETS2
+        - FEV
+        - FOSB
+        - FOXA3
+        - FOXL2
+        - FOXO4
+        - GLB1L2
+        - HK2
+        - HOXB9
+        - IER5L
+        - IGDCC3
+        - IKZF3
+        - IRF1
+        - KIAA1804
+        - KIF18B
+        - KIF2C
+        - KLF1
+        - KMT2A
+        - LYL1
+        - MAML2
+        - MAP2K3
+        - MAP4K5
+        - MAP7D1
+        - MEIS1
+        - MIDN
+        - NCL
+        - OSR2
+        - POU3F2
+        - PRDM1
+        - PRTG
+        - PTPN12
+        - PTPN13
+        - RHOXF2BB
+        - RREB1
+        - RUNX1T1
+        - S1PR2
+        - SET
+        - SLC38A2
+        - SLC6A9
+        - SNAI1
+        - STIL
+        - TBX2
+        - TSC22D1
+        - UBASH3B
+        - ZBTB1
+        - ZBTB10
+        - ZC3HAV1
+        - ZNF318
+      validation_genes:
+        - ATL1
+        - BAK1
+        - CDKN1B
+        - FOXF1
+        - HES7
+        - HNF4A
+        - HOXC13
+        - ISL2
+        - JUN
+        - LHX1
+        - MAP4K3
+        - MAPK1
+        - NIT1
+        - PTPN1
+        - PTPN9
+        - TP73
+      test_genes:
+        - BCL2L11
+        - BPGM
+        - COL2A1
+        - FOXA1
+        - HOXA13
+        - MAP2K6
+        - PLK4
+        - SAMD1
+        - SGK1
+        - SLC4A1
+        - SPI1
+        - TBX3
+        - TGFBR2
+        - TMSB4X
+        - UBASH3A
+        - ZBTB25
+    D_heldout_barcode_group:
+      column: D_heldout_barcode_group
+      approved: false
+      feasibility: feasible_technical_lane_holdout_only
+      group_to_split:
+        1: train
+        2: train
+        3: train
+        4: train
+        5: train
+        6: train
+        7: validation
+        8: test
+      sizes:
+        train: {cells: 67801, controls: 5470, noncontrol_cells: 62331}
+        validation: {cells: 11667, controls: 934, noncontrol_cells: 10733}
+        test: {cells: 11737, controls: 949, noncontrol_cells: 10788}

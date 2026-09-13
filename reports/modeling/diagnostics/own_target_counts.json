@@ -1,0 +1,10 @@
+{
+  "interpretation": "counts_of_normalized_own_target_log1p_effect_not_guide_validation",
+  "missing_targets": [],
+  "n_mapped": 105,
+  "n_missing": 0,
+  "n_negative": 2,
+  "n_positive": 103,
+  "n_targets": 105,
+  "n_zero": 0
+}

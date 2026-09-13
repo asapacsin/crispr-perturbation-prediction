@@ -1,0 +1,152 @@
+{
+  "test": {
+    "additive": {
+      "macro_cosine": 0.9043097204756934,
+      "macro_delta_pearson": 0.9043121136331068,
+      "macro_mae": 0.015647762900056508,
+      "macro_mse": 0.002372021082504696,
+      "n_conditions": 26,
+      "n_cosine_defined": 26,
+      "n_pearson_defined": 26,
+      "skill_vs_train_condition_balanced_perturbed_mean": 0.5652011351954547
+    },
+    "control_only": {
+      "macro_cosine": null,
+      "macro_delta_pearson": null,
+      "macro_mae": 0.024647750228375988,
+      "macro_mse": 0.007677071455332505,
+      "n_conditions": 26,
+      "n_cosine_defined": 0,
+      "n_pearson_defined": 0
+    },
+    "matching_single_mean": {
+      "macro_cosine": 0.9043097204756934,
+      "macro_delta_pearson": 0.9043121136331068,
+      "macro_mae": 0.015204580816479582,
+      "macro_mse": 0.0025004242083031068,
+      "n_conditions": 26,
+      "n_cosine_defined": 26,
+      "n_pearson_defined": 26
+    },
+    "ridge_multihot_main_effects": {
+      "macro_cosine": 0.9088392193108201,
+      "macro_delta_pearson": 0.9089075427352875,
+      "macro_mae": 0.013579973961811173,
+      "macro_mse": 0.0015997942104419099,
+      "n_conditions": 26,
+      "n_cosine_defined": 26,
+      "n_pearson_defined": 26,
+      "skill_vs_additive": 0.32555649600186776,
+      "skill_vs_train_condition_balanced_perturbed_mean": 0.7067527300868123
+    },
+    "train_condition_balanced_perturbed_mean": {
+      "macro_cosine": 0.5580644650558116,
+      "macro_delta_pearson": 0.5570448387317457,
+      "macro_mae": 0.020742855596735294,
+      "macro_mse": 0.005455444515870546,
+      "n_conditions": 26,
+      "n_cosine_defined": 26,
+      "n_pearson_defined": 26
+    }
+  },
+  "train": {
+    "additive": {
+      "macro_cosine": 0.9575797062651968,
+      "macro_delta_pearson": 0.9575513881730883,
+      "macro_mae": 0.005598828828275597,
+      "macro_mse": 0.0006896763920260091,
+      "n_conditions": 184,
+      "n_cosine_defined": 184,
+      "n_pearson_defined": 184,
+      "skill_vs_train_condition_balanced_perturbed_mean": 0.8116540119139011
+    },
+    "control_only": {
+      "macro_cosine": null,
+      "macro_delta_pearson": null,
+      "macro_mae": 0.01780456120645881,
+      "macro_mse": 0.004912869638164023,
+      "n_conditions": 184,
+      "n_cosine_defined": 0,
+      "n_pearson_defined": 0
+    },
+    "matching_single_mean": {
+      "macro_cosine": 0.9575797062651968,
+      "macro_delta_pearson": 0.9575513881730883,
+      "macro_mae": 0.005842218946398217,
+      "macro_mse": 0.0009660317083248138,
+      "n_conditions": 184,
+      "n_cosine_defined": 184,
+      "n_pearson_defined": 184
+    },
+    "ridge_multihot_main_effects": {
+      "macro_cosine": 0.9621853956243113,
+      "macro_delta_pearson": 0.9622155685635552,
+      "macro_mae": 0.005123405661564771,
+      "macro_mse": 0.00028761410338785974,
+      "n_conditions": 184,
+      "n_cosine_defined": 184,
+      "n_pearson_defined": 184,
+      "skill_vs_additive": 0.5829723813759117,
+      "skill_vs_train_condition_balanced_perturbed_mean": 0.9214545211110533
+    },
+    "train_condition_balanced_perturbed_mean": {
+      "macro_cosine": 0.5150745134869522,
+      "macro_delta_pearson": 0.5152030375590664,
+      "macro_mae": 0.01619103132790318,
+      "macro_mse": 0.003661752496213172,
+      "n_conditions": 184,
+      "n_cosine_defined": 184,
+      "n_pearson_defined": 184
+    }
+  },
+  "validation": {
+    "additive": {
+      "macro_cosine": 0.9098453982921485,
+      "macro_delta_pearson": 0.9096183285826241,
+      "macro_mae": 0.013461069276479387,
+      "macro_mse": 0.0018602861851613754,
+      "n_conditions": 26,
+      "n_cosine_defined": 26,
+      "n_pearson_defined": 26,
+      "skill_vs_train_condition_balanced_perturbed_mean": 0.7134851501917624
+    },
+    "control_only": {
+      "macro_cosine": null,
+      "macro_delta_pearson": null,
+      "macro_mae": 0.024743569367552284,
+      "macro_mse": 0.008700036305685565,
+      "n_conditions": 26,
+      "n_cosine_defined": 0,
+      "n_pearson_defined": 0
+    },
+    "matching_single_mean": {
+      "macro_cosine": 0.9098453982921485,
+      "macro_delta_pearson": 0.9096183285826241,
+      "macro_mae": 0.014819391125633139,
+      "macro_mse": 0.002626320311363747,
+      "n_conditions": 26,
+      "n_cosine_defined": 26,
+      "n_pearson_defined": 26
+    },
+    "ridge_multihot_main_effects": {
+      "macro_cosine": 0.904215847246831,
+      "macro_delta_pearson": 0.9039551080324586,
+      "macro_mae": 0.01234855681208872,
+      "macro_mse": 0.0013770745017839992,
+      "n_conditions": 26,
+      "n_cosine_defined": 26,
+      "n_pearson_defined": 26,
+      "skill_vs_additive": 0.2597512615164955,
+      "skill_vs_train_condition_balanced_perturbed_mean": 0.7879077438726614
+    },
+    "train_condition_balanced_perturbed_mean": {
+      "macro_cosine": 0.5535049614467134,
+      "macro_delta_pearson": 0.5524857216665606,
+      "macro_mae": 0.021682143429826085,
+      "macro_mse": 0.006492808964025606,
+      "n_conditions": 26,
+      "n_cosine_defined": 26,
+      "n_pearson_defined": 26
+    }
+  }
+}

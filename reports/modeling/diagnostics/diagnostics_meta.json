@@ -1,0 +1,12 @@
+{
+  "h5ad_reloaded": false,
+  "n_example_pairs": 3,
+  "n_pair_summary_rows": 131,
+  "named_go_enrichment": "skipped",
+  "next_model_requires_nested_or_external_holdout": true,
+  "pair_summary_file_used_for_display_only": true,
+  "plots_added": false,
+  "refit_attempted": false,
+  "test_pairs_consumed": true,
+  "test_retuned": false
+}

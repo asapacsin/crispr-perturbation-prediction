@@ -1,0 +1,11 @@
+{
+  "interpretation": "High squared-norm fraction is alignment of a descriptive residual with the mean training single-delta direction. It is not proof of confounding and is not a corrected prediction or a new test metric.",
+  "largest_squared_norm_fraction": 0.5669846502772791,
+  "largest_squared_norm_fraction_pair": "AHR+KLF1",
+  "median_cosine_to_neg_shared_shift": 0.0697163514729212,
+  "median_orthogonal_residual_rms": 0.03215748838832436,
+  "median_squared_norm_fraction": 0.12401360308502754,
+  "mu0_source": "predictions.npz",
+  "n_train_singles": 105,
+  "residual_source": "all_data_lane_stats_ctrl"
+}

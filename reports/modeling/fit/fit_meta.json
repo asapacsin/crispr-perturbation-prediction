@@ -1,0 +1,16 @@
+{
+  "all_data_describe_used": false,
+  "bootstrap_seed": 20260913,
+  "chosen_alpha": 0.1,
+  "n_bootstrap": 2000,
+  "primary_metric": "macro_condition_mse",
+  "ridge_alphas": [
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "split_column": "B_heldout_combination",
+  "split_seed": 20260911
+}

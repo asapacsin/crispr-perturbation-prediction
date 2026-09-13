@@ -1,0 +1,12 @@
+{
+  "backend": "matplotlib_agg",
+  "generated": [
+    "single_effect_top_gene_heatmap",
+    "strongest_interaction_heatmap",
+    "observed_vs_additive_delta_scatter_largest_residual_pair",
+    "pair_error_distribution_ranking",
+    "heldout_baseline_paired_condition_error",
+    "pca_237_condition_signatures_svd"
+  ],
+  "skipped": false
+}

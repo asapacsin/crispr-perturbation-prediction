@@ -1,0 +1,216 @@
+
+# Cell 0 (markdown)
+## Data Preprocessing for Norman et al. 2019 dataset 
+
+This notebook is largely derived from the preprocessing followed by Lotfollahi, Mohammad, et al. "Predicting cellular responses to complex perturbations in high‐throughput screens." Molecular systems biology 19.6 (2023): e11517. 
+
+See https://github.com/facebookresearch/CPA/blob/main/preprocessing/Norman19.ipynb
+
+# Cell 1 (code)
+import os
+import numpy as np
+import scanpy as sc
+import anndata as ad
+import pandas as pd
+import re
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+plt.rcParams['figure.figsize']=(5, 5)
+sc.settings.verbosity = 3
+sc.logging.print_header()
+#os.chdir('./')
+
+
+%load_ext autoreload
+%autoreload 2 
+
+# Cell 2 (code)
+
+import sys
+sys.path.append('../')
+
+# Cell 3 (code)
+sc.set_figure_params(dpi=100)
+
+# Cell 4 (markdown)
+## loading the raw data
+
+# Cell 5 (code)
+adata = sc.read("../datasets/Norman2019_raw_all_genes.h5ad")
+
+# Cell 6 (code)
+plt.hist(adata[adata.obs['perturbed']=='control'].X[:,20].toarray())
+
+# Cell 7 (code)
+needed_obs = adata.obs[["guide_identity", "UMI_count","gemgroup","good_coverage","number_of_cells"]].copy()
+
+# Cell 8 (code)
+adata_new = sc.AnnData(adata.X.copy(), obs=needed_obs, var=adata.var.copy())
+
+# Cell 9 (code)
+adata_new
+
+# Cell 10 (markdown)
+### check all ctrl guides
+
+# Cell 11 (code)
+list_control = []
+for i in np.unique(adata_new.obs["guide_identity"]):
+   m = re.match(r"NegCtrl(.*)_NegCtrl(.*)+NegCtrl(.*)_NegCtrl(.*)", i)
+   if m :
+    list_control.append(m.group())
+
+# Cell 12 (markdown)
+remove "NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0" suggested by authors
+
+# Cell 13 (code)
+adata_new = adata_new[adata_new.obs["guide_identity"] != "NegCtrl1_NegCtrl0__NegCtrl1_NegCtrl0"] 
+
+# Cell 14 (code)
+adata_new
+
+# Cell 15 (markdown)
+merge all controls 
+
+# Cell 16 (code)
+adata_new.obs["guide_merged"] = adata_new.obs["guide_identity"]
+
+# Cell 17 (code)
+for i in np.unique(adata_new.obs["guide_merged"]):
+   m = re.match(r"NegCtrl(.*)_NegCtrl(.*)+NegCtrl(.*)_NegCtrl(.*)", i)
+   if m :
+        adata_new.obs["guide_merged"].replace(i,"ctrl",inplace=True)
+
+# Cell 18 (markdown)
+relabeling
+
+# Cell 19 (code)
+old_pool = []
+for i in np.unique(adata_new.obs["guide_merged"]):
+    if i == "ctrl":
+        old_pool.append(i)
+        continue
+    split = i.split("__")[1]
+    split = split.split("_")
+    for j, string in enumerate(split):
+        if "NegCtrl" in split[j]:
+            split[j] = "ctrl"
+    if len(split) == 1:
+        if split[0] in old_pool:
+            print("old:",i, "new:",split[0])
+        adata_new.obs["guide_merged"].replace(i,split[0],inplace=True)
+        old_pool.append(split[0])
+    else:
+        if f"{split[0]}+{split[1]}" in old_pool:
+            print("old:",i, "new:",f"{split[0]}+{split[1]}")
+        adata_new.obs["guide_merged"].replace(i, f"{split[0]}+{split[1]}",inplace=True)
+        old_pool.append(f"{split[0]}+{split[1]}")
+
+# Cell 20 (code)
+adata_new.obs["guide_merged"]
+
+# Cell 21 (markdown)
+# preprocessing 
+
+# Cell 22 (markdown)
+Keep the count data in a counts layer
+
+# Cell 23 (code)
+adata_new.layers["counts"] = adata_new.X.copy()
+
+# Cell 24 (markdown)
+Normalization and HVG selection
+
+# Cell 25 (code)
+sc.pp.normalize_total(adata_new)
+sc.pp.log1p(adata_new)
+sc.pp.highly_variable_genes(adata_new,n_top_genes=5000, subset=False)
+
+# Cell 26 (code)
+adata_new
+
+# Cell 27 (markdown)
+### Keep expression for all genes that are perturbed
+
+# Cell 28 (code)
+conditions = [(c.split('+')[0], c.split('+')[1]) for c in adata_new.obs['guide_merged'] if '+' in c]
+conditions = [item for sublist in conditions for item in sublist]
+genes_to_keep = np.unique(conditions)
+
+# Cell 29 (code)
+map_dict = {i:i for i in adata_new.var['gene_name'].values}
+map_dict['CBARP']='C19orf26'
+map_dict['FOXL2NB']='C3orf72'
+map_dict['RP5-862P8.2']='KIAA1804'
+map_dict['RHOXF2B']='RHOXF2BB'
+
+adata_new.var['gene_name'] = adata_new.var.gene_name.map(map_dict)
+
+# Cell 30 (code)
+adata_new.var['highly_variable'] = adata_new.var['highly_variable'] + adata_new.var.gene_name.isin(genes_to_keep)
+
+# Cell 31 (code)
+adata_new = adata_new[:,adata_new.var['highly_variable'] == True]
+
+# Cell 32 (code)
+adata_new
+
+# Cell 33 (markdown)
+# Prepare for the model
+
+# Cell 34 (code)
+adata_new.obs['dose_val'] = 'nan'
+
+# Cell 35 (code)
+adata_new.obs['dose_val'].loc[
+    adata_new.obs['guide_merged']=="ctrl"
+] = '1'
+
+adata_new.obs['dose_val'].loc[
+    adata_new.obs['guide_merged']!="ctrl"
+] = "1+1"
+
+# Cell 36 (code)
+adata_new.obs["condition"] = adata_new.obs["guide_merged"]
+adata_new.obs['cell_type'] = 'A549'
+adata_new.obs['control'] = [1 if x == 'ctrl' else 0 for x in adata_new.obs.condition.values]
+
+# Cell 37 (code)
+adata_new.obs['drug_dose_name'] = adata_new.obs.condition.astype(str) + '_' + adata_new.obs.dose_val.astype(str)
+
+# Cell 38 (code)
+adata_new.obs['cov_drug_dose_name'] = adata_new.obs.cell_type.astype(str) + '_' + adata_new.obs.drug_dose_name.astype(str)
+
+# Cell 39 (code)
+from scipy.sparse import csr_matrix
+adata_new.X = csr_matrix(adata_new.X)
+
+# Cell 40 (code)
+## Saving  h5ad
+adata_new.write_h5ad('../datasets/Norman2019_all_genes.h5ad')
+
+# Cell 41 (markdown)
+DE test
+
+# Cell 42 (code)
+from compert.helper import rank_genes_groups_by_cov
+
+# Cell 43 (code)
+rank_genes_groups_by_cov(adata_new, groupby='cov_drug_dose_name', covariate='cell_type', control_group='ctrl_1', n_genes=20)
+
+# Cell 44 (markdown)
+saving to new object
+
+# Cell 45 (code)
+to_pick = adata_new.obs[["cov_drug_dose_name","dose_val","control","condition","guide_identity","drug_dose_name","cell_type"]]
+
+# Cell 46 (code)
+adata_new_small = sc.AnnData(adata_new.X, obs=to_pick,
+                             var=adata_new.var, uns=adata_new.uns)
+
+# Cell 47 (code)
+adata_new_small.layers = adata_new.layers
+
+# Cell 48 (code)
+adata_new_small.write_h5ad('/dfs/project/perturb-gnn/datasets/Norman2019_hvg+perts.h5ad')

@@ -1,0 +1,6 @@
+cell_barcode,condition,guide_identity,good_coverage,number_of_cells,raw_guide_identity
+ACTGTCCAGTCGTTTG-1,OSR2+ctrl,CEBPB_NegCtrl0__CEBPB_NegCtrl0,False,0.0,OSR2_NegCtrl0__OSR2_NegCtrl0
+TACCTATAGTCGTTTG-1,ctrl,FOXF1_NegCtrl0__FOXF1_NegCtrl0,False,0.0,NegCtrl10_NegCtrl0__NegCtrl10_NegCtrl0
+GCGCGATTCGTGTAGT-6,HOXA13+ctrl,FOXA3_FOXF1__FOXA3_FOXF1,False,0.0,HOXA13_NegCtrl0__HOXA13_NegCtrl0
+GTCGGGTAGGCCGAAT-7,ctrl+CEBPE,HOXA13_NegCtrl0__HOXA13_NegCtrl0,False,0.0,NegCtrl0_CEBPE__NegCtrl0_CEBPE
+TGGCCAGAGTCGATAA-7,CNN1+MAPK1,NegCtrl0_RUNX1T1__NegCtrl0_RUNX1T1,False,0.0,CNN1_MAPK1__CNN1_MAPK1

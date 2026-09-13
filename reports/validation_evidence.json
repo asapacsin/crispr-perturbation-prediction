@@ -1,0 +1,307 @@
+{
+  "checked_nonzero_entries": 37317477,
+  "zero_pattern_mismatches": 0,
+  "max_abs_log1p_scaled_count_error": 6.134923680178872e-07,
+  "entries_log1p_error_above_2e-6": 0,
+  "scale_quantiles": [
+    0.24748508945742312,
+    0.792223437890784,
+    1.0000000355282637,
+    1.306402081469964,
+    6.564589109999707
+  ],
+  "count_row_sum_times_scale_quantiles": [
+    1964.0673093420926,
+    2816.2274173084097,
+    2963.7358606970784,
+    3193.663829891161,
+    9479.682961447494
+  ],
+  "normalization_10000_hypothesis": {
+    "implied_original_total_quantiles": [
+      1523.3245877898437,
+      7654.611196537591,
+      9999.999644717376,
+      12622.701528023463,
+      40406.47467661029
+    ],
+    "max_distance_to_nearest_integer": 0.49998565891473845,
+    "fraction_within_0_01_of_integer": 0.0195712954333644
+  },
+  "api_layers_None_alias_equals_X": true,
+  "empty_expression_rows": 0,
+  "empty_expression_columns": 0,
+  "examples": [
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000187608",
+      "gene_name": "ISG15",
+      "count": 1.0,
+      "X": 0.6815017461776733,
+      "expm1_X_over_count": 0.9768442224701959
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000074800",
+      "gene_name": "ENO1",
+      "count": 4.0,
+      "X": 1.5907396078109741,
+      "expm1_X_over_count": 0.9768442802228645
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000116649",
+      "gene_name": "SRM",
+      "count": 2.0,
+      "X": 1.083054780960083,
+      "expm1_X_over_count": 0.9768443277530885
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000142634",
+      "gene_name": "EFHD2",
+      "count": 1.0,
+      "X": 0.6815017461776733,
+      "expm1_X_over_count": 0.9768442224701959
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000070831",
+      "gene_name": "CDC42",
+      "count": 2.0,
+      "X": 1.083054780960083,
+      "expm1_X_over_count": 0.9768443277530885
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000117318",
+      "gene_name": "ID3",
+      "count": 1.0,
+      "X": 0.6815017461776733,
+      "expm1_X_over_count": 0.9768442224701959
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000117614",
+      "gene_name": "SYF2",
+      "count": 1.0,
+      "X": 0.6815017461776733,
+      "expm1_X_over_count": 0.9768442224701959
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000117616",
+      "gene_name": "RSRP1",
+      "count": 2.0,
+      "X": 1.083054780960083,
+      "expm1_X_over_count": 0.9768443277530885
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000117632",
+      "gene_name": "STMN1",
+      "count": 3.0,
+      "X": 1.3687750101089478,
+      "expm1_X_over_count": 0.9768442940465191
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000142669",
+      "gene_name": "SH3BGRL3",
+      "count": 2.0,
+      "X": 1.083054780960083,
+      "expm1_X_over_count": 0.9768443277530885
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000198830",
+      "gene_name": "HMGN2",
+      "count": 7.0,
+      "X": 2.058972120285034,
+      "expm1_X_over_count": 0.9768441772091431
+    },
+    {
+      "barcode": "AAACCTGAGGCATGTG-1",
+      "gene_id": "ENSG00000117713",
+      "gene_name": "ARID1A",
+      "count": 1.0,
+      "X": 0.6815017461776733,
+      "expm1_X_over_count": 0.9768442224701959
+    }
+  ],
+  "barcode_suffix": {
+    "1": {
+      "cells": 12409,
+      "control_cells": 1008,
+      "condition_labels": 284
+    },
+    "2": {
+      "cells": 11422,
+      "control_cells": 928,
+      "condition_labels": 284
+    },
+    "3": {
+      "cells": 11583,
+      "control_cells": 863,
+      "condition_labels": 284
+    },
+    "4": {
+      "cells": 10629,
+      "control_cells": 874,
+      "condition_labels": 284
+    },
+    "5": {
+      "cells": 10606,
+      "control_cells": 821,
+      "condition_labels": 284
+    },
+    "6": {
+      "cells": 11152,
+      "control_cells": 976,
+      "condition_labels": 284
+    },
+    "7": {
+      "cells": 11667,
+      "control_cells": 934,
+      "condition_labels": 284
+    },
+    "8": {
+      "cells": 11737,
+      "control_cells": 949,
+      "condition_labels": 284
+    }
+  },
+  "barcode_without_suffix_duplicates": 4768,
+  "uns": {
+    "non_dropout_gene_idx": {
+      "n_keys": 283,
+      "array_length_min": 2731,
+      "array_length_max": 4063,
+      "keys_not_in_condition_name": [],
+      "conditions_without_key": [
+        "A549_ctrl_1"
+      ],
+      "example_key": "A549_AHR+FEV_1+1",
+      "example_values": [
+        0,
+        2,
+        3,
+        4,
+        5,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "value_type": "int64",
+      "values_in_var_names": null,
+      "min_value": 0,
+      "max_value": 5044
+    },
+    "non_zeros_gene_idx": {
+      "n_keys": 283,
+      "array_length_min": 1411,
+      "array_length_max": 2863,
+      "keys_not_in_condition_name": [],
+      "conditions_without_key": [
+        "A549_ctrl_1"
+      ],
+      "example_key": "A549_AHR+FEV_1+1",
+      "example_values": [
+        2,
+        4,
+        5,
+        9,
+        10,
+        11,
+        14,
+        16,
+        18,
+        20
+      ],
+      "value_type": "int64",
+      "values_in_var_names": null,
+      "min_value": 0,
+      "max_value": 5044
+    },
+    "rank_genes_groups_cov_all": {
+      "n_keys": 283,
+      "array_length_min": 5045,
+      "array_length_max": 5045,
+      "keys_not_in_condition_name": [],
+      "conditions_without_key": [
+        "A549_ctrl_1"
+      ],
+      "example_key": "A549_AHR+FEV_1+1",
+      "example_values": [
+        "ENSG00000163497",
+        "ENSG00000142669",
+        "ENSG00000069482",
+        "ENSG00000196565",
+        "ENSG00000185198",
+        "ENSG00000198886",
+        "ENSG00000092841",
+        "ENSG00000088992",
+        "ENSG00000251562",
+        "ENSG00000198727"
+      ],
+      "value_type": "object",
+      "values_in_var_names": true,
+      "min_value": null,
+      "max_value": null
+    },
+    "top_non_dropout_de_20": {
+      "n_keys": 283,
+      "array_length_min": 20,
+      "array_length_max": 20,
+      "keys_not_in_condition_name": [],
+      "conditions_without_key": [
+        "A549_ctrl_1"
+      ],
+      "example_key": "A549_AHR+FEV_1+1",
+      "example_values": [
+        "ENSG00000163497",
+        "ENSG00000142669",
+        "ENSG00000069482",
+        "ENSG00000196565",
+        "ENSG00000185198",
+        "ENSG00000198886",
+        "ENSG00000092841",
+        "ENSG00000088992",
+        "ENSG00000251562",
+        "ENSG00000198727"
+      ],
+      "value_type": "object",
+      "values_in_var_names": true,
+      "min_value": null,
+      "max_value": null
+    },
+    "top_non_zero_de_20": {
+      "n_keys": 283,
+      "array_length_min": 20,
+      "array_length_max": 20,
+      "keys_not_in_condition_name": [],
+      "conditions_without_key": [
+        "A549_ctrl_1"
+      ],
+      "example_key": "A549_AHR+FEV_1+1",
+      "example_values": [
+        "ENSG00000163497",
+        "ENSG00000142669",
+        "ENSG00000069482",
+        "ENSG00000196565",
+        "ENSG00000185198",
+        "ENSG00000198886",
+        "ENSG00000092841",
+        "ENSG00000088992",
+        "ENSG00000251562",
+        "ENSG00000198727"
+      ],
+      "value_type": "object",
+      "values_in_var_names": true,
+      "min_value": null,
+      "max_value": null
+    }
+  }
+}

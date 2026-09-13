@@ -1,0 +1,12 @@
+{
+  "bootstrap_mean": -0.000779695147891003,
+  "bootstrap_std": 0.00031446127938084375,
+  "interpretation": "conditional_on_fixed_model_and_train_reference",
+  "mean_difference": -0.0007722268720627861,
+  "n_conditions": 26,
+  "n_samples": 2000,
+  "not_biological_confidence_interval": true,
+  "percentile_2_5": -0.0014486681672158162,
+  "percentile_97_5": -0.00022416532918130932,
+  "seed": 20260913
+}

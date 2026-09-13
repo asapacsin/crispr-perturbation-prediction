@@ -1,0 +1,13 @@
+{
+  "columns": [
+    "source",
+    "target",
+    "importance"
+  ],
+  "edges": 673899,
+  "has_named_gene_sets": false,
+  "named_go_enrichment": "skipped",
+  "nodes": 3127,
+  "reason": "local_go_graph_has_no_named_terms",
+  "source": "reports/modeling_resource_evidence.json"
+}

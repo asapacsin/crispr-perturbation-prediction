@@ -1,0 +1,21 @@
+list,rank,canonical_perturbation,residual_rms,observed_rms,residual_over_response_rms,note
+largest_residual_rms,1,CEBPA+CEBPB,0.10568248152288494,0.18116952445532147,0.5833347625138106,
+largest_residual_rms,2,CEBPA+CEBPE,0.1004774138516169,0.1909008801020992,0.526332900078191,
+largest_residual_rms,3,CEBPE+SET,0.0820011399144982,0.06475290315939701,1.266370091741564,
+largest_residual_rms,4,CBFA2T3+FEV,0.07430203012706789,0.1266438470928303,0.5867006714712661,
+largest_residual_rms,5,CEBPA+KLF1,0.07183394715059067,0.1392658086768967,0.5158046173217494,
+largest_residual_rms,6,CEBPE+KLF1,0.07171913951389401,0.051087609301856685,1.4038460694086055,
+largest_residual_rms,7,CEBPE+ZC3HAV1,0.0662762551707942,0.04209047813037377,1.57461397719232,
+largest_residual_rms,8,CEBPB+CEBPE,0.06614894320996881,0.14190172084534095,0.4661602608897514,
+largest_residual_rms,9,DLX2+ZBTB10,0.0654453930706882,0.13624945749510312,0.48033507269590664,
+largest_residual_rms,10,CEBPA+JUN,0.06378491278052559,0.19801195241994854,0.3221265787291921,
+lowest_residual_over_response_rms,1,BAK1+KLF1,0.01416878132402218,0.055526229242560836,0.25517276280597523,weak observed_rms must not be called additive
+lowest_residual_over_response_rms,2,CEBPA+ZC3HAV1,0.04560019847920651,0.16580770953414076,0.275018565827406,weak observed_rms must not be called additive
+lowest_residual_over_response_rms,3,IKZF3+MAP2K6,0.027273670699619078,0.09452963627566911,0.28851978886370705,weak observed_rms must not be called additive
+lowest_residual_over_response_rms,4,SAMD1+UBASH3B,0.02485893674412376,0.08208111956478815,0.30285815880596195,weak observed_rms must not be called additive
+lowest_residual_over_response_rms,5,ETS2+IKZF3,0.03246457398306464,0.1063271395818934,0.305327258033311,weak observed_rms must not be called additive
+lowest_residual_over_response_rms,6,SAMD1+ZBTB1,0.028274142154408276,0.0925314186052576,0.3055626140892403,weak observed_rms must not be called additive
+lowest_residual_over_response_rms,7,PTPN12+ZBTB25,0.02598479747375435,0.08469133180328628,0.30681767449483016,weak observed_rms must not be called additive
+lowest_residual_over_response_rms,8,KLF1+TGFBR2,0.01913768378959491,0.06234144382112887,0.30698172221524217,weak observed_rms must not be called additive
+lowest_residual_over_response_rms,9,PTPN12+SAMD1,0.026682444423939352,0.08554810036255098,0.3118999055602607,weak observed_rms must not be called additive
+lowest_residual_over_response_rms,10,SGK1+TBX2,0.025658231513453627,0.0802244463703419,0.3198305837475894,weak observed_rms must not be called additive

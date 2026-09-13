@@ -1,0 +1,873 @@
+{
+  "sha": "3b25109aeb9c0c2026bd70abd50304a0ad4e5395",
+  "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/trees/3b25109aeb9c0c2026bd70abd50304a0ad4e5395",
+  "tree": [
+    {
+      "path": "GI_CBL-CNN1_and_other_examples.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "112a597ef91ffcdeb34b305ae7e5620e21ea7843",
+      "size": 295810,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/112a597ef91ffcdeb34b305ae7e5620e21ea7843"
+    },
+    {
+      "path": "GI_DUSP9-MAPK1-ETS2_example.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85c7321edd0c3af88da0223c588a2e9ee96601a1",
+      "size": 444378,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/85c7321edd0c3af88da0223c588a2e9ee96601a1"
+    },
+    {
+      "path": "GI_activation_of_neighboring_genes.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "119121609facb76a3a407c6d49fa165a539a5857",
+      "size": 66091,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/119121609facb76a3a407c6d49fa165a539a5857"
+    },
+    {
+      "path": "GI_dimensionality_reduction_and_statistics.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6269f456ba07932620206684d044c3562ff64ca",
+      "size": 470459,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/f6269f456ba07932620206684d044c3562ff64ca"
+    },
+    {
+      "path": "GI_downsampling_analysis.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1cbd01e729d6bcfefd2d9267122d067220153cb",
+      "size": 1283080,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/b1cbd01e729d6bcfefd2d9267122d067220153cb"
+    },
+    {
+      "path": "GI_generate_populations.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf5bda32e7b6a4f6d660ae5fce634a882f25b24b",
+      "size": 47618,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/bf5bda32e7b6a4f6d660ae5fce634a882f25b24b"
+    },
+    {
+      "path": "GI_model_fits.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88a766c3416bdd08ad1026ef10c77eb1cf5c0d73",
+      "size": 173825,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/88a766c3416bdd08ad1026ef10c77eb1cf5c0d73"
+    },
+    {
+      "path": "GI_optimal_umap.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08f271cf8250c1c56e28e7b30fbe77e771d7e421",
+      "size": 2487472,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/08f271cf8250c1c56e28e7b30fbe77e771d7e421"
+    },
+    {
+      "path": "GI_orienting_buffering_interactions.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dab2f1fd8729dfafbd4107d9f6808b915dfe720f",
+      "size": 99371,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/dab2f1fd8729dfafbd4107d9f6808b915dfe720f"
+    },
+    {
+      "path": "GI_prediction.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c535cb7946af564656f560d50d4702ae0a7561c3",
+      "size": 1137845,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/c535cb7946af564656f560d50d4702ae0a7561c3"
+    },
+    {
+      "path": "GI_prediction_performance_comparison.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d41e6b125780ffff4145001a5c93848717dc14d",
+      "size": 252519,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/8d41e6b125780ffff4145001a5c93848717dc14d"
+    },
+    {
+      "path": "GI_sgRNA_performance.ipynb",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59accd93f736d85a41b0dda736538ba473bf442a",
+      "size": 552910,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/59accd93f736d85a41b0dda736538ba473bf442a"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a041280bd00a9d068f503b8ee7ce35214bd24a1",
+      "size": 7652,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/0a041280bd00a9d068f503b8ee7ce35214bd24a1"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01100cba298119c7852f2a906069e75d6a58138b",
+      "size": 1828,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/01100cba298119c7852f2a906069e75d6a58138b"
+    },
+    {
+      "path": "data_sharing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "56f75ab3f92ced536c1126a5b7e31b34ed6dc905",
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/trees/56f75ab3f92ced536c1126a5b7e31b34ed6dc905"
+    },
+    {
+      "path": "data_sharing/20180821_guides_chosen_for_perturbseq.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5212272b6f1c11fe7ec008d1590b4ea2370bceca",
+      "size": 7417,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/5212272b6f1c11fe7ec008d1590b4ea2370bceca"
+    },
+    {
+      "path": "data_sharing/ARCHS4_Tissues_table.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebaa90ad30a954e508dcb70d655e5ae5d82df8c1",
+      "size": 32743,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/ebaa90ad30a954e508dcb70d655e5ae5d82df8c1"
+    },
+    {
+      "path": "data_sharing/K562 D6 facs experiment.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c681647533f721b5ee5f527f2f50823d36c1f975",
+      "size": 8833,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/c681647533f721b5ee5f527f2f50823d36c1f975"
+    },
+    {
+      "path": "data_sharing/cellranger-GRCh38-1.2.0_only_genes.gtf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41d0126b71e459d1719548c57ccdc2cd3a8d16fd",
+      "size": 7593284,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/41d0126b71e459d1719548c57ccdc2cd3a8d16fd"
+    },
+    {
+      "path": "data_sharing/comparisons_to_other_imputation_methods_stats.pkl",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b34545d13cf5b3c8588290824a35a6844c4e450",
+      "size": 99729,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/1b34545d13cf5b3c8588290824a35a6844c4e450"
+    },
+    {
+      "path": "data_sharing/erythroid_ARCHS4_Tissues_table.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a06c4ed3b01da358a6011e6ec732af3b138cea8",
+      "size": 29735,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/2a06c4ed3b01da358a6011e6ec732af3b138cea8"
+    },
+    {
+      "path": "data_sharing/erythroid_Human_Gene_Atlas_table.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "10a9b69ff9c7d80fa384e4f7e1f0002a8820c7b3",
+      "size": 5205,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/10a9b69ff9c7d80fa384e4f7e1f0002a8820c7b3"
+    },
+    {
+      "path": "data_sharing/maps_random_sampling_corrs.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d01a5bf4c17c56445ef8b3821d04074e88b0f8fa",
+      "size": 4907,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/d01a5bf4c17c56445ef8b3821d04074e88b0f8fa"
+    },
+    {
+      "path": "data_sharing/myeloid_ARCHS4_Tissues_table.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5e9bb53e2a784c89981cd5921a9bf3e874cd367",
+      "size": 41335,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/b5e9bb53e2a784c89981cd5921a9bf3e874cd367"
+    },
+    {
+      "path": "data_sharing/myeloid_GO_Biological_Process_2018_table.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a37ed8408d243c53ec0b03cd06fdd6bfc3965507",
+      "size": 411358,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/a37ed8408d243c53ec0b03cd06fdd6bfc3965507"
+    },
+    {
+      "path": "data_sharing/myeloid_Human_Gene_Atlas_table.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5845abf53e7750073868de1945b4b9b54b3238bb",
+      "size": 10890,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/5845abf53e7750073868de1945b4b9b54b3238bb"
+    },
+    {
+      "path": "data_sharing/optimal_umap_layout.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0113628345bf1e207c1538f9cb6cce8569f7ab7",
+      "size": 12855,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/d0113628345bf1e207c1538f9cb6cce8569f7ab7"
+    },
+    {
+      "path": "data_sharing/regr_fits_final.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ae91bffe88a4df11fd28a97d2a89194f091d4bf",
+      "size": 127987,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/8ae91bffe88a4df11fd28a97d2a89194f091d4bf"
+    },
+    {
+      "path": "figures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85a19db1443f2cf4e97252f73f96a8480ac02610",
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/trees/85a19db1443f2cf4e97252f73f96a8480ac02610"
+    },
+    {
+      "path": "figures/PLACEHOLDER.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d723e72eb11d06b18a7cf1f84ab79a1e3d83a5c2",
+      "size": 31,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/d723e72eb11d06b18a7cf1f84ab79a1e3d83a5c2"
+    },
+    {
+      "path": "final_emaps",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "660194009c340d9503d3dd4cf4d59ab031870617",
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/trees/660194009c340d9503d3dd4cf4d59ab031870617"
+    },
+    {
+      "path": "final_emaps/20160125_CRISPRa_doubles_oligos.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4a4268ee54c22e207fedbda409b6d3aa1ff781e",
+      "size": 75343,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/f4a4268ee54c22e207fedbda409b6d3aa1ff781e"
+    },
+    {
+      "path": "final_emaps/20180821_guides_chosen_for_perturbseq.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c491b335ebb890541dcd664835ba92b7c6ed7a34",
+      "size": 5484,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/c491b335ebb890541dcd664835ba92b7c6ed7a34"
+    },
+    {
+      "path": "final_emaps/CRISPRa_epistasis_GBC_final_corrected.xlsx",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37181648c97c2b67993ba37bf2a063f7347a9aa2",
+      "size": 63749,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/37181648c97c2b67993ba37bf2a063f7347a9aa2"
+    },
+    {
+      "path": "final_emaps/filter0",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f5d3c2007fa6a1651966fd3be2fae479d7c46630",
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/trees/f5d3c2007fa6a1651966fd3be2fae479d7c46630"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_emap_gene.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7cafd3bba841fa2168145cd5da0838921469724",
+      "size": 189351,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/a7cafd3bba841fa2168145cd5da0838921469724"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_emap_gene_sign_flip.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7cafd3bba841fa2168145cd5da0838921469724",
+      "size": 189351,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/a7cafd3bba841fa2168145cd5da0838921469724"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_emap_sgRNA_nonegs.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc953012146c89ab650d9a80798acd135e46e5b9",
+      "size": 749920,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/fc953012146c89ab650d9a80798acd135e46e5b9"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_emap_sgRNA_perturbseq.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a207b0109ecf35c6a32b1b7862327573f08d5d7",
+      "size": 166530,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/3a207b0109ecf35c6a32b1b7862327573f08d5d7"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_emap_sgRNA_wnegs.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4862761bb0a57e809765da9a1250bce29b9d9092",
+      "size": 860290,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/4862761bb0a57e809765da9a1250bce29b9d9092"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_phenotypeMatrix_gene.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd709eb7b1b0340aa522f9f4255d2f6fcc447908",
+      "size": 205126,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/fd709eb7b1b0340aa522f9f4255d2f6fcc447908"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate1_allphenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e60edd1069211160455a81981852986cbaff6890",
+      "size": 3815197,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/e60edd1069211160455a81981852986cbaff6890"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate1_phenotypeMatrix.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5718975fba5ef140a93120e5593a4ca7a0db6570",
+      "size": 925877,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/5718975fba5ef140a93120e5593a4ca7a0db6570"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate1_phenotypeMatrix_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71b4d2bfba9a23c16fadc15bbf51683a08812186",
+      "size": 925779,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/71b4d2bfba9a23c16fadc15bbf51683a08812186"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate1_singlePhenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6604d5746de1cab0726bcebc86430411eef7e9aa",
+      "size": 21249,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/6604d5746de1cab0726bcebc86430411eef7e9aa"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate1_singlePhenotypes_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55cb3495442e4a78b6f8369bb69a1e7b854e3926",
+      "size": 21281,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/55cb3495442e4a78b6f8369bb69a1e7b854e3926"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate2_allphenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b4f7976cefed08eab43d851ce79026bc8de7353",
+      "size": 3814825,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/5b4f7976cefed08eab43d851ce79026bc8de7353"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate2_phenotypeMatrix.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebcd57133aaeea7422a577cd8f82b5b6cf9fbf6e",
+      "size": 925505,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/ebcd57133aaeea7422a577cd8f82b5b6cf9fbf6e"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate2_phenotypeMatrix_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fcca4df84708d093cdb55327c86bc77277774201",
+      "size": 925104,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/fcca4df84708d093cdb55327c86bc77277774201"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate2_singlePhenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "611149939b3f6ae561519b88710df6cc5a70dc1f",
+      "size": 21225,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/611149939b3f6ae561519b88710df6cc5a70dc1f"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicate2_singlePhenotypes_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6fb65b5a1bca0e2375f143d012c8373f391ec02",
+      "size": 21283,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/a6fb65b5a1bca0e2375f143d012c8373f391ec02"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicateAverage_phenotypeMatrix.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d24cfc3a74cfbfc55b4d174ff570121d90ec55bf",
+      "size": 925496,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/d24cfc3a74cfbfc55b4d174ff570121d90ec55bf"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicateAverage_phenotypeMatrix_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b56d5c3699b8bed12b2700d5d613cc62eb72ddfd",
+      "size": 925718,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/b56d5c3699b8bed12b2700d5d613cc62eb72ddfd"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicateAverage_singlePhenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ca6e84440e22eaf0ace3978084b474b44064d91",
+      "size": 21237,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/2ca6e84440e22eaf0ace3978084b474b44064d91"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_replicateAverage_singlePhenotypes_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e0cf31caef5e752ef0fa4acca5e3387822ffcf5a",
+      "size": 21315,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/e0cf31caef5e752ef0fa4acca5e3387822ffcf5a"
+    },
+    {
+      "path": "final_emaps/filter0/CRISPRa_K562_sgRNA_to_gene.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99dc1135b430dcc0cdaa0f272083a795d2379d33",
+      "size": 7480,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/99dc1135b430dcc0cdaa0f272083a795d2379d33"
+    },
+    {
+      "path": "final_emaps/filter15",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c75a1d422665d7d20d6a3f8163d5f00ecb76b23f",
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/trees/c75a1d422665d7d20d6a3f8163d5f00ecb76b23f"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene.atr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5512c86ccac4ee8b61ef03100099afb42de56134",
+      "size": 3673,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/5512c86ccac4ee8b61ef03100099afb42de56134"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene.cdt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68ed5b72dbc19eb8964b7664bd16e04131f5bc33",
+      "size": 124770,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/68ed5b72dbc19eb8964b7664bd16e04131f5bc33"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene.gtr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "236a6c855ad457d5d6e5343b02eec4daedefb2e4",
+      "size": 3673,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/236a6c855ad457d5d6e5343b02eec4daedefb2e4"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene.jtv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96c9b8da6cf19b166ca8651d0e9137ceb9d1adfd",
+      "size": 858,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/96c9b8da6cf19b166ca8651d0e9137ceb9d1adfd"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc441e1c55e957bb1e0b11458a15b73373912f21",
+      "size": 187992,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/dc441e1c55e957bb1e0b11458a15b73373912f21"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene_sign_flip.atr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5512c86ccac4ee8b61ef03100099afb42de56134",
+      "size": 3673,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/5512c86ccac4ee8b61ef03100099afb42de56134"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene_sign_flip.cdt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa57d79b79772079ac24b8cf9568409f9ea70369",
+      "size": 122914,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/aa57d79b79772079ac24b8cf9568409f9ea70369"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene_sign_flip.gtr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "236a6c855ad457d5d6e5343b02eec4daedefb2e4",
+      "size": 3673,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/236a6c855ad457d5d6e5343b02eec4daedefb2e4"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene_sign_flip.jtv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96c9b8da6cf19b166ca8651d0e9137ceb9d1adfd",
+      "size": 858,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/96c9b8da6cf19b166ca8651d0e9137ceb9d1adfd"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_gene_sign_flip.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dc441e1c55e957bb1e0b11458a15b73373912f21",
+      "size": 187992,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/dc441e1c55e957bb1e0b11458a15b73373912f21"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_sgRNA_nonegs.atr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71a799147a191e2e83e70cc95223f945d0f0820a",
+      "size": 7308,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/71a799147a191e2e83e70cc95223f945d0f0820a"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_sgRNA_nonegs.cdt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5eb18003db1c179bacf5c4f5e4654b5a34824c7",
+      "size": 453706,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/c5eb18003db1c179bacf5c4f5e4654b5a34824c7"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_sgRNA_nonegs.gtr",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d27617209a93fe6fced1285f3ad75b1a57476c2",
+      "size": 7308,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/5d27617209a93fe6fced1285f3ad75b1a57476c2"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_sgRNA_nonegs.jtv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12e37f3bd075669724cd679024559ab024c7995d",
+      "size": 819,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/12e37f3bd075669724cd679024559ab024c7995d"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_sgRNA_nonegs.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c86b0ac7106c3101329f66a6ee998729ab6d8ced",
+      "size": 680621,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/c86b0ac7106c3101329f66a6ee998729ab6d8ced"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_sgRNA_perturbseq.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85766980d48aaf4c85eacf025de35a7f7ba4d0e2",
+      "size": 152585,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/85766980d48aaf4c85eacf025de35a7f7ba4d0e2"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_emap_sgRNA_wnegs.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ce9c5cd620ebdb8937e2086b01cba72e0236189",
+      "size": 780247,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/0ce9c5cd620ebdb8937e2086b01cba72e0236189"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_phenotypeMatrix_gene.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc08f1971cd938a5dae75d9aee8acf5377171fe4",
+      "size": 205181,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/fc08f1971cd938a5dae75d9aee8acf5377171fe4"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate1_allphenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04f52934be5e8e65cc48fe58840ff64606580235",
+      "size": 3475998,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/04f52934be5e8e65cc48fe58840ff64606580235"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate1_phenotypeMatrix.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab4e286bca939f81034210706197384c80777ce4",
+      "size": 843025,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/ab4e286bca939f81034210706197384c80777ce4"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate1_phenotypeMatrix_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e813289fc3ca189269161a8fdcae726fe594e5a",
+      "size": 843020,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/9e813289fc3ca189269161a8fdcae726fe594e5a"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate1_singlePhenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a1759c2e0f163846f69b8e8fe00f1348c64bdd12",
+      "size": 20362,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/a1759c2e0f163846f69b8e8fe00f1348c64bdd12"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate1_singlePhenotypes_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c5c3b14b3dc8956e632f8e3dc724b349603c04a",
+      "size": 20346,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/7c5c3b14b3dc8956e632f8e3dc724b349603c04a"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate2_allphenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4611ec6c7d667d027f97b98bffdf6b5cb766d69d",
+      "size": 3475680,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/4611ec6c7d667d027f97b98bffdf6b5cb766d69d"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate2_phenotypeMatrix.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d39271201b832b6bec3d5fcb6cd189da7e639fe",
+      "size": 842707,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/1d39271201b832b6bec3d5fcb6cd189da7e639fe"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate2_phenotypeMatrix_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba49b024d525baf39afde562fa3ac6e2dda7a71d",
+      "size": 842488,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/ba49b024d525baf39afde562fa3ac6e2dda7a71d"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate2_singlePhenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7b817f7414fec85971598b7e7d86218da9645465",
+      "size": 20334,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/7b817f7414fec85971598b7e7d86218da9645465"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicate2_singlePhenotypes_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "881c5017260f57a747ce94b338a06628f743e898",
+      "size": 20344,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/881c5017260f57a747ce94b338a06628f743e898"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicateAverage_phenotypeMatrix.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f6b76ac40f10805b34165ec215959370320547c",
+      "size": 842913,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/9f6b76ac40f10805b34165ec215959370320547c"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicateAverage_phenotypeMatrix_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a5c4bf0a4c37050868496664b08fbdab3f3d864",
+      "size": 842706,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/2a5c4bf0a4c37050868496664b08fbdab3f3d864"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicateAverage_singlePhenotypes.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b8e92276e6cafd1f467dab209b469847fe4054e",
+      "size": 20392,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/6b8e92276e6cafd1f467dab209b469847fe4054e"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_replicateAverage_singlePhenotypes_abbaAveraged.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85a55a8617f4feff96a8b3e0b190213d722eca77",
+      "size": 20358,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/85a55a8617f4feff96a8b3e0b190213d722eca77"
+    },
+    {
+      "path": "final_emaps/filter15/CRISPRa_K562_sgRNA_to_gene.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc5c71fa5db465f0b6c05e92d22517e477275c21",
+      "size": 7148,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/fc5c71fa5db465f0b6c05e92d22517e477275c21"
+    },
+    {
+      "path": "final_emaps/perturbseq_single_phenotype_table.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "479ead56faeb1fa5ff953252a862ad9e38fb52fb",
+      "size": 4374,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/479ead56faeb1fa5ff953252a862ad9e38fb52fb"
+    },
+    {
+      "path": "final_emaps/processed_emap.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e5d1e9aac8d35e838bb789da1aa4d58c91ba4bb",
+      "size": 207970,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/8e5d1e9aac8d35e838bb789da1aa4d58c91ba4bb"
+    },
+    {
+      "path": "final_emaps/processed_fitnesses.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3609fe77b10e8b18d61bde816743528e42a0533",
+      "size": 235998,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/c3609fe77b10e8b18d61bde816743528e42a0533"
+    },
+    {
+      "path": "final_emaps/processed_perturbseq_emap.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af59fbec9efabecc239a2596d4c65cd2db6e0990",
+      "size": 179519,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/af59fbec9efabecc239a2596d4c65cd2db6e0990"
+    },
+    {
+      "path": "final_emaps/processed_perturbseq_fitnesses.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94e4e9550765675f285668225069e92428d7fdc6",
+      "size": 187289,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/94e4e9550765675f285668225069e92428d7fdc6"
+    },
+    {
+      "path": "final_emaps/single_fitnesses.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5f6f7ae3a1f109ef0411f34a868c9b74f17d344",
+      "size": 4646,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/d5f6f7ae3a1f109ef0411f34a868c9b74f17d344"
+    },
+    {
+      "path": "final_emaps/single_fitnesses_no_filter.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e6d756e7b73ed4b5bce6fb0e31a83469bf9c9ab",
+      "size": 4652,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/2e6d756e7b73ed4b5bce6fb0e31a83469bf9c9ab"
+    },
+    {
+      "path": "final_emaps/single_phenotype_table.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4239f865a5c0f037ec70627cbcfa259cd22503f2",
+      "size": 4864,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/4239f865a5c0f037ec70627cbcfa259cd22503f2"
+    },
+    {
+      "path": "maxide.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d7758916bc2b4b2499e41018897252a5406fc1c",
+      "size": 3673,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/5d7758916bc2b4b2499e41018897252a5406fc1c"
+    },
+    {
+      "path": "onesense.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3e9822b97edc259c086e64a31dd81c454a7fd05",
+      "size": 13285,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/a3e9822b97edc259c086e64a31dd81c454a7fd05"
+    },
+    {
+      "path": "perturbseq",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "80cc3eb74acff600427c1c2806d03569400b89e5",
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/trees/80cc3eb74acff600427c1c2806d03569400b89e5"
+    },
+    {
+      "path": "perturbseq/LICENSE.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2348a18741b0f4349186ded0b4c55f26f6047fd6",
+      "size": 35146,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/2348a18741b0f4349186ded0b4c55f26f6047fd6"
+    },
+    {
+      "path": "perturbseq/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32e8ff20bd495f454224338cded98d5c70a4e637",
+      "size": 1379,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/32e8ff20bd495f454224338cded98d5c70a4e637"
+    },
+    {
+      "path": "perturbseq/cell_cycle.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ca6c53c7be4348ff9c5bdb375ab3fb2b3e5e85f",
+      "size": 12210,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/9ca6c53c7be4348ff9c5bdb375ab3fb2b3e5e85f"
+    },
+    {
+      "path": "perturbseq/cell_population.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55b3cf551d9079c4f3fcf9e7d5e3757a0da422cf",
+      "size": 65917,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/55b3cf551d9079c4f3fcf9e7d5e3757a0da422cf"
+    },
+    {
+      "path": "perturbseq/differential_expression.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d9418d1eed8240aabf63d7b4e52c2489ef5a1505",
+      "size": 19055,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/d9418d1eed8240aabf63d7b4e52c2489ef5a1505"
+    },
+    {
+      "path": "perturbseq/expression_normalization.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e60f2433a4213ab0a7aa35860f71a947d8ea1cb",
+      "size": 12027,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/3e60f2433a4213ab0a7aa35860f71a947d8ea1cb"
+    },
+    {
+      "path": "perturbseq/transformers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4562e6c70b14727dc4892f30e00f315c674b4d38",
+      "size": 9234,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/4562e6c70b14727dc4892f30e00f315c674b4d38"
+    },
+    {
+      "path": "perturbseq/util.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e40a8c8bbbd01b545b8c2931ba28c209d91453bb",
+      "size": 2464,
+      "url": "https://api.github.com/repos/thomasmaxwellnorman/Perturbseq_GI/git/blobs/e40a8c8bbbd01b545b8c2931ba28c209d91453bb"
+    }
+  ],
+  "truncated": false
+}

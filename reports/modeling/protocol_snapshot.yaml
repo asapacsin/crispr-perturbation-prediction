@@ -1,0 +1,216 @@
+# Authorized interpretable-effect and Package-B linear-baseline protocol.
+# Predeclared before seeing modeling outputs. Do not edit after fit starts.
+# Historical config/dataset_schema.yaml approval flags stay false.
+
+protocol_version: 1
+authorized: true
+authorized_on: "2026-09-13"
+authorization_scope: >
+  Interpretable lane-balanced effect/interaction tables on stored log1p X,
+  plus Package B linear baselines (control-only, condition-balanced perturbed
+  mean, matching-single mean, additive, multi-hot ridge). No deep models.
+  Descriptive all-data analysis is after fit and cannot change hyperparameters.
+
+dataset_schema: config/dataset_schema.yaml
+historical_schema_flags_remain_false: true
+split_manifest: reports/proposed_split_assignments.csv
+split_evidence: reports/provenance_evidence.json
+
+expression:
+  matrix: X
+  representation: stored_log1p_per_cell_scaled
+  n_features: 5045
+  feature_order_authority: gene_id
+  feature_order_immutable: true
+  load: sparse_h5py_csr_or_backed_anndata
+  never_load_dense_counts_layer: true
+  do_not_read_uns: true
+  do_not_use_bulk_fitness: true
+  do_not_use_external_outcome: true
+  hvg_status: full_cohort_prepared_feature_set
+  hvg_caveat: >
+    The 5,045 genes were selected on the full processed cohort. This is a
+    retrospective prepared-feature benchmark, not a prospective gene-discovery
+    claim. No additional feature selection is performed.
+
+grouping:
+  condition_unit: canonical_unordered_target_set
+  delimiter: "+"
+  control_token: ctrl
+  preserve_original_orientation_labels: true
+  construct_pooling_caveat: >
+    Orientation-equivalent labels (GENE+ctrl vs ctrl+GENE) are pooled for
+    target-set estimates. That pooling is a construct-identity caveat, not
+    proof that the two physical constructs are interchangeable.
+  experimental_orientation_equivalence: unknown
+
+lanes:
+  n: 8
+  ids: [1, 2, 3, 4, 5, 6, 7, 8]
+  source: barcode_suffix_equals_gemgroup
+  interpretation: technical_10x_chromium_lanes_not_biological_replicates
+  do_not_treat_as_bioreplicates: true
+
+estimand:
+  lane_balanced_mean: average_of_within_lane_means
+  single_effect_per_lane: mean(single, lane) - mean(ctrl, lane)
+  pair_interaction_per_lane: mean(pair, lane) - mean(A, lane) - mean(B, lane) + mean(ctrl, lane)
+  then_average_lanes: true
+  additivity_space: stored_log1p
+  not_mechanistic_synergy_proof: true
+  not_paired_cell_counterfactual: true
+
+uncertainty:
+  name: conditional_cell_sampling_se
+  lane_mean_variance: sample_variance_over_n
+  sample_variance_ddof: 1
+  contrast_variance: sum_of_component_lane_mean_variances
+  control_enters_contrast_once: true
+  se_of_lane_average: sqrt(sum_of_lane_contrast_variances / n_lanes_squared)
+  n_lanes_squared: 64
+  interval: normal_95
+  z_normal_95: 1.96
+  if_any_component_lane_n_lt_2: set_se_na_and_flag
+  do_not_invent_variance: true
+  no_biological_pvalues: true
+  no_fdr: true
+  significance_field: not_estimable_independent_bioreplicates_absent
+  assumption: disjoint_lanes_and_conditionally_independent_captured_cells
+  rankings_are_descriptive: true
+  uncertainty_is_not_causal_proof: true
+
+leave_one_lane_out:
+  enabled: true
+  report: max_rms_change_and_effect_rms_range
+  purpose: technical_stability_not_biological_replication
+
+orientation_sensitivity:
+  enabled: true
+  applies_to: single_target_sets_with_both_orientation_labels
+  expected_dual_orientation_singles: 47
+  report: rms_difference_versus_pooled_single_effect
+  no_new_biology_claim: true
+
+split:
+  protocol: B_heldout_combination
+  column: B_heldout_combination
+  seed: 20260911
+  use_existing_manifest_exactly: true
+  expected:
+    train:
+      cells: 75588
+      controls: 5891
+      noncontrol_target_sets: 184
+      single_target_sets: 105
+      double_target_sets: 79
+    validation:
+      cells: 7639
+      controls: 731
+      noncontrol_target_sets: 26
+      single_target_sets: 0
+      double_target_sets: 26
+    test:
+      cells: 7978
+      controls: 731
+      noncontrol_target_sets: 26
+      single_target_sets: 0
+      double_target_sets: 26
+
+predictive:
+  all_transforms_and_centroids_from_train_only: true
+  mu0: train_controls_lane_balanced
+  train_condition_means: lane_balanced_train_cells
+  val_test_truth: lane_balanced_own_cells
+  delta_reference: same_train_mu0
+  val_test_controls: diagnostic_only_never_model_input_or_reference
+  no_full_test_graphs: true
+  no_feature_selection: true
+  describe_cannot_change_hyperparameters: true
+  describe_after_fit: true
+
+baselines:
+  - control_only
+  - train_condition_balanced_perturbed_mean
+  - matching_single_mean
+  - additive
+  - ridge_multihot_main_effects
+
+baseline_definitions:
+  control_only: predict train mu0; delta is the zero vector
+  train_condition_balanced_perturbed_mean: >
+    Unweighted mean of the 184 training perturbed condition centroids.
+    Not a cell-weighted mean.
+  matching_single_mean: average of training centroids of partners A and B
+  additive: mu_A + mu_B - mu0
+  ridge_multihot_main_effects: >
+    Linear map from 105-gene multi-hot main effects to 5045-gene delta
+    centroids. No pair-specific one-hots. Limited linear model, not a
+    learned interaction model.
+
+ridge:
+  n_train_conditions: 184
+  n_features: 105
+  feature_names_source: dataset_schema.targets.names
+  encoding: multi_hot_main_effects_only
+  no_pair_onehots: true
+  intercept: unpenalized
+  center_design: true
+  center_response: true
+  alphas: [0.1, 1.0, 10.0, 100.0, 1000.0]
+  select_one_alpha_by: validation_macro_mse
+  tie_break: smaller_alpha
+  freeze_after_selection: true
+  refit_on_train_plus_val: false
+  evaluate_test: once
+  solver: numpy_linear_algebra
+  sklearn_required: false
+
+metrics:
+  primary: macro_condition_mse
+  secondary: macro_condition_mae
+  also: [delta_pearson, cosine]
+  equal_weight_per_condition: true
+  zero_or_constant_vector: nan_not_zero
+  skills:
+    - vs_train_condition_balanced_perturbed_mean
+    - vs_additive
+  skill_formula: 1 - loss_model / loss_baseline
+  skill_if_baseline_loss_zero: nan
+  bootstrap:
+    quantity: paired_test_condition_mse_difference_vs_additive
+    seed: 20260913
+    n_samples: 2000
+    unit: test_condition
+    interpretation: conditional_on_fixed_model_and_train_reference
+    shared_prepared_genes_caveat: true
+    not_biological_confidence_interval: true
+
+outputs:
+  directory: reports/modeling
+  report: reports/MODELING_REPORT.md
+  long_tables:
+    singles: {n_perturbations: 105, n_genes: 5045, format: gzip_csv}
+    pairs: {n_perturbations: 131, n_genes: 5045, format: gzip_csv}
+  plots:
+    backend: matplotlib_agg
+    diagnostic_only: true
+    no_umap: true
+    items:
+      - single_effect_top_gene_heatmap
+      - strongest_interaction_heatmap
+      - observed_vs_additive_delta_scatter_largest_residual_pair
+      - pair_error_distribution_ranking
+      - heldout_baseline_paired_condition_error
+      - pca_237_condition_signatures_svd
+  go_enrichment: skipped
+  svd_modules: descriptive_loadings_and_top_genes_only
+
+nonlinear_models:
+  authorized_now: false
+  reason: evaluate_linear_and_additive_first_only_79_training_pairs
+  recommend_only_after_results: true
+
+citations:
+  - Norman, T. M. et al. Exploring genetic interaction manifolds constructed from rich single-cell phenotypes. Science (2019). doi:10.1126/science.aax4438
+  - reports/METHODS_DECISION_BRIEF.md
+  - reports/DATA_PROVENANCE.md

@@ -1,0 +1,49 @@
+{
+  "alpha": 0.1,
+  "center_design_and_response": true,
+  "describe_used_in_fit": false,
+  "encoding": "multi_hot_main_effects_only",
+  "intercept": "unpenalized",
+  "n_features": 105,
+  "n_train_conditions": 184,
+  "refit_train_plus_val": false,
+  "same_reference_mse_identity": "MSE(mu-r, hatmu-r) equals MSE(mu, hatmu) for shared r; reported numbers are on deltas versus train mu0",
+  "selection_metric": "validation_macro_mse",
+  "test_control_vs_train_mu0": {
+    "cosine": 0.9998749446356296,
+    "delta_pearson": 0.9998664955136113,
+    "mse": 4.3987067681817816e-05,
+    "role": "diagnostic_only"
+  },
+  "test_evaluated_once": true,
+  "test_used_in_selection": false,
+  "val_control_vs_train_mu0": {
+    "cosine": 0.9998583253975019,
+    "delta_pearson": 0.9998491092305202,
+    "mse": 5.0398789923914556e-05,
+    "role": "diagnostic_only"
+  },
+  "val_test_controls_used_as_reference": false,
+  "validation_curve": [
+    {
+      "alpha": 0.1,
+      "validation_macro_mse": 0.0013770745017839992
+    },
+    {
+      "alpha": 1.0,
+      "validation_macro_mse": 0.0015645502499405607
+    },
+    {
+      "alpha": 10.0,
+      "validation_macro_mse": 0.003960403120411562
+    },
+    {
+      "alpha": 100.0,
+      "validation_macro_mse": 0.006069934683008652
+    },
+    {
+      "alpha": 1000.0,
+      "validation_macro_mse": 0.0064474082410753055
+    }
+  ]
+}
